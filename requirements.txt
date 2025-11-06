@@ -1,0 +1,29 @@
+#web framework
+flask
+streamlit
+# Core application
+langchain
+langchain-community
+langchain-chroma
+python-dotenv
+
+# Vector database and embeddings
+chromadb
+sentence-transformers
+
+# PDF and data processing
+pdfplumber
+tqdm
+
+# --- Optional Dependencies ---
+
+# For OCR capability in pdf_to_rag.py
+# On Debian/Ubuntu: sudo apt-get install tesseract-ocr
+# On macOS: brew install tesseract
+pytesseract
+pdf2image
+
+# Required for ChromaDB on Windows to avoid issues with the built-in sqlite3
+# This will be installed only on Windows systems.
+pysqlite3-binary
+pysqlite3-binary; sys_platform == 'win32'
