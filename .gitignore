@@ -30,31 +30,50 @@ streamlit/conversion_env/
 .DS_Store
 Thumbs.db
 
-# ChromaDB (large database files - can be regenerated)
-finance_db/
-finance_db(1)/
-pharma_db/
-
 # Large model files
 *.bin
 *.gguf
 *.safetensors
 streamlit/llama.cpp/
 streamlit/llama_1b_merged_full/
-train_model/new_model/
 
-# Large/Duplicate folders
+# Folders to exclude
+chunks(1)/
+data/
 data_chunks/
 data_clean_chunks/
 data_clean_chunks_with_urls/
 data_clean_chunks(1)/
 data_improved_chunks/
-data_pipeline/
 data_pipeline_safe/
+data-clean/
 pdfs/
 pdfs_safe/
 source_pdfs/
 pipeline_test/
+html/
+report/
+train_model/
+exports/
+flask/
+project_flask/
+project_streamlit/
+static/
+templates/
+Evaluation_Results_*/
+finance_db(1)/
+pharma_db/
+
+# Root files to exclude
+*.csv
+*.xlsx
+*.docx
+*.pdf
+METADATA_FIX_GUIDE.md
+clean_redundancy.py
+convert_rag_to_training.py
+debug_normalize.py
+fix_chunks_metadata.py
 
 # Cache
 *.log

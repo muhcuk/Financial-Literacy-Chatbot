@@ -1,4 +1,0 @@
-import*as a3ca6e6c947fe8228ec316837dc3ed457490ed58ceae977f1955f5e0dd856c8f4 from"../o/frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js";Liferay.Loader.define("@frontend-taglib-clay$clayui/tooltip@3.95.2/index",["module"],(function(e){e.exports={__esModule:!0,default:a3ca6e6c947fe8228ec316837dc3ed457490ed58ceae977f1955f5e0dd856c8f4,...a3ca6e6c947fe8228ec316837dc3ed457490ed58ceae977f1955f5e0dd856c8f4}}));
-
-import*as ae6d7aa97498c31bc8798f1d9b79cbb4e893f24a4a4819fc9e0692312e5fa2fec from"../o/frontend-js-react-web/__liferay__/index.js";Liferay.Loader.define("@liferay/frontend-js-react-web@5.0.27/index",["module"],(function(e){e.exports=ae6d7aa97498c31bc8798f1d9b79cbb4e893f24a4a4819fc9e0692312e5fa2fec}));
-

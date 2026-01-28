@@ -1,2 +1,0 @@
-import*as a9444e04ba46c220b4d45fb3048b9fdf6b7589464876689c6084c5c31d1e833c3 from"../o/frontend-js-web/__liferay__/index.js";Liferay.Loader.define("frontend-js-web@5.0.85/index",["module"],(function(e){e.exports=a9444e04ba46c220b4d45fb3048b9fdf6b7589464876689c6084c5c31d1e833c3}));
-
