@@ -1,0 +1,2 @@
+import*as a69a589320711c040841eb071c1470b1090954096346179264260bbec890eed5e from"../o/frontend-js-dependencies-web/__liferay__/exports/dom-align.js";Liferay.Loader.define("liferay!frontend-js-dependencies-web$dom-align@1.12.2/index",["module"],(function(e){e.exports={__esModule:!0,default:a69a589320711c040841eb071c1470b1090954096346179264260bbec890eed5e,...a69a589320711c040841eb071c1470b1090954096346179264260bbec890eed5e}}));
+

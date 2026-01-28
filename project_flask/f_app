@@ -1,0 +1,64 @@
+import sys
+from flask import Flask, render_template, request, Response
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+from langchain.prompts import ChatPromptTemplate
+from langchain_community.chat_models import ChatOllama
+
+app = Flask(__name__)
+
+# Points to the shared database in the root folder
+PERSIST_DIR = "../finance_db"
+COLLECTION_NAME = "finance_knowledge"
+EMB_MODEL = "intfloat/multilingual-e5-small"
+# Use a smaller model to avoid memory errors
+LLM_MODEL = "llama3:8b:q4_K_M" 
+
+print("Loading retriever...")
+embedding_model = HuggingFaceEmbeddings(model_name=EMB_MODEL)
+db = Chroma(
+    collection_name=COLLECTION_NAME, 
+    embedding_function=embedding_model, 
+    persist_directory=PERSIST_DIR
+)
+retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 5})
+print("Retriever loaded.")
+
+llm = ChatOllama(model=LLM_MODEL, temperature=0.1)
+
+def get_rag_response(query: str, llm_instance):
+    template = """
+You are a helpful financial literacy assistant. Use ONLY the following context to answer the user's question. If the information is not in the context, state that you don't have enough information.
+
+Context:
+{context}
+
+Question:
+{question}
+"""
+    prompt_tmpl = ChatPromptTemplate.from_template(template)
+    docs = retriever.get_relevant_documents(query)
+    context_text = "\n\n".join([d.page_content for d in docs])
+    prompt = prompt_tmpl.format_prompt(context=context_text, question=query)
+    return llm_instance.stream(prompt.to_messages())
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/ask", methods=["POST"])
+def ask():
+    user_message = request.json.get("message")
+    if not user_message:
+        return "No message provided", 400
+
+    def stream_response():
+        stream = get_rag_response(user_message, llm)
+        for chunk in stream:
+            if chunk.content:
+                yield chunk.content
+    
+    return Response(stream_response(), mimetype='text/plain')
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)

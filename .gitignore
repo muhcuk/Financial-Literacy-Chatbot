@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+rag_env/
+venv/
+env/
+.venv/
+*_env/
+conversion_env/
+streamlit/conversion_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ChromaDB (large database files - can be regenerated)
+finance_db/
+finance_db(1)/
+pharma_db/
+
+# Large model files
+*.bin
+*.gguf
+*.safetensors
+streamlit/llama.cpp/
+streamlit/llama_1b_merged_full/
+train_model/new_model/
+
+# Large/Duplicate folders
+data_chunks/
+data_clean_chunks/
+data_clean_chunks_with_urls/
+data_clean_chunks(1)/
+data_improved_chunks/
+data_pipeline/
+data_pipeline_safe/
+pdfs/
+pdfs_safe/
+source_pdfs/
+pipeline_test/
+
+# Cache
+*.log
+.cache/
+
+# Streamlit
+.streamlit/secrets.toml

@@ -1,0 +1,4960 @@
+{
+  "results": [
+    {
+      "user_id": "20251229_000808",
+      "timestamp": "2025-12-29T00:08:29.924679",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_000808",
+      "timestamp": "2025-12-29T00:13:44.278293",
+      "test_type": "post",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Heard of it, but don't recall meaning",
+          "score": 1
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Heard of it, but don't recall meaning",
+          "score": 1
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Heard of it, but don't recall meaning",
+          "score": 1
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Always",
+          "score": 3
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Daily",
+          "score": 4
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Very confident",
+          "score": 3
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Very confident",
+          "score": 3
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly agree",
+          "score": 3
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 50.0,
+        "Financial Behavior": 100.0,
+        "Financial Confidence": 100.0,
+        "Financial Attitudes": 83.33333333333334,
+        "Overall": 83.33333333333334
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20251229_001635",
+      "timestamp": "2025-12-29T00:17:19.251408",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_002010",
+      "timestamp": "2025-12-29T00:22:30.833173",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 22,
+        "education": "Bachelor's",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Heard of it, but don't recall meaning",
+          "score": 1
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Always",
+          "score": 3
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Once/twice a month",
+          "score": 2
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not very confident",
+          "score": 1
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not very confident",
+          "score": 1
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Disagree",
+          "score": 1
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 50.0,
+        "Financial Behavior": 71.42857142857143,
+        "Financial Confidence": 33.33333333333333,
+        "Financial Attitudes": 16.666666666666664,
+        "Overall": 42.857142857142854
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_002010",
+      "timestamp": "2025-12-29T00:29:13.931774",
+      "test_type": "post",
+      "participant_info": {
+        "age": 22,
+        "education": "Bachelor's",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Heard of it, but don't recall meaning",
+          "score": 1
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Always",
+          "score": 3
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Weekly",
+          "score": 3
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Confident",
+          "score": 2
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Confident",
+          "score": 2
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 83.33333333333334,
+        "Financial Behavior": 85.71428571428571,
+        "Financial Confidence": 66.66666666666666,
+        "Financial Attitudes": 66.66666666666666,
+        "Overall": 75.59523809523809
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20251229_100916",
+      "timestamp": "2025-12-29T10:11:41.204522",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Female",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Heard of it, but don't recall meaning",
+          "score": 1
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Always",
+          "score": 3
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Once/twice a year",
+          "score": 1
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not very confident",
+          "score": 1
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not very confident",
+          "score": 1
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 83.33333333333334,
+        "Financial Behavior": 57.14285714285714,
+        "Financial Confidence": 33.33333333333333,
+        "Financial Attitudes": 66.66666666666666,
+        "Overall": 60.11904761904761
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_100916",
+      "timestamp": "2025-12-29T10:14:52.196250",
+      "test_type": "post",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Female",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Always",
+          "score": 3
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Weekly",
+          "score": 3
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not very confident",
+          "score": 1
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not very confident",
+          "score": 1
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Disagree",
+          "score": 1
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 85.71428571428571,
+        "Financial Confidence": 33.33333333333333,
+        "Financial Attitudes": 50.0,
+        "Overall": 42.26190476190476
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_102440",
+      "timestamp": "2025-12-29T10:27:23.285965",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Bachelor's",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_110839",
+      "timestamp": "2025-12-29T11:10:26.679943",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_110839",
+      "timestamp": "2025-12-29T11:16:47.918594",
+      "test_type": "post",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Always",
+          "score": 3
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Daily",
+          "score": 4
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Very confident",
+          "score": 3
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Very confident",
+          "score": 3
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly agree",
+          "score": 3
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly agree",
+          "score": 3
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 100.0,
+        "Financial Behavior": 100.0,
+        "Financial Confidence": 100.0,
+        "Financial Attitudes": 100.0,
+        "Overall": 100.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_112146",
+      "timestamp": "2025-12-29T13:01:46.755432",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_233401",
+      "timestamp": "2025-12-30T01:30:52.443953",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251230_100404",
+      "timestamp": "2025-12-30T10:04:12.888967",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251231_005727",
+      "timestamp": "2025-12-31T00:58:51.041351",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251231_140051",
+      "timestamp": "2025-12-31T14:01:02.678615",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251231_140206",
+      "timestamp": "2025-12-31T14:02:17.439080",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251231_141329",
+      "timestamp": "2025-12-31T14:13:37.784135",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251231_141724",
+      "timestamp": "2025-12-31T14:17:39.405407",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_104001",
+      "timestamp": "2026-01-01T11:03:42.381274",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:09:00.094922",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:18:32.939716",
+      "test_type": "post",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260102_100324",
+      "timestamp": "2026-01-02T10:31:37.661065",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260103_005022",
+      "timestamp": "2026-01-03T00:52:24.084559",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260103_005022",
+      "timestamp": "2026-01-03T01:03:17.889309",
+      "test_type": "post",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260103_010335",
+      "timestamp": "2026-01-03T01:04:42.886693",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260104_173937",
+      "timestamp": "2026-01-04T17:40:25.171945",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260107_222553",
+      "timestamp": "2026-01-07T22:27:27.933380",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260107_232457",
+      "timestamp": "2026-01-07T23:25:43.430944",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_000241",
+      "timestamp": "2026-01-08T00:02:52.974433",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_000446",
+      "timestamp": "2026-01-08T00:04:55.217857",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_004651",
+      "timestamp": "2026-01-08T00:47:26.412060",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_105755",
+      "timestamp": "2026-01-08T10:58:31.123161",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_121829",
+      "timestamp": "2026-01-08T12:18:41.041530",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_122203",
+      "timestamp": "2026-01-08T12:22:51.370009",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_122511",
+      "timestamp": "2026-01-08T12:25:31.979606",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_123107",
+      "timestamp": "2026-01-08T12:31:29.770043",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_201952",
+      "timestamp": "2026-01-08T20:20:55.872850",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_203007",
+      "timestamp": "2026-01-08T20:32:14.064639",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260108_204203",
+      "timestamp": "2026-01-08T20:42:46.634810",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_091536",
+      "timestamp": "2026-01-10T10:31:22.404046",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_103808",
+      "timestamp": "2026-01-10T10:38:46.149596",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_103807",
+      "timestamp": "2026-01-10T10:39:23.369984",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_104643",
+      "timestamp": "2026-01-10T10:48:21.554370",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_105506",
+      "timestamp": "2026-01-10T10:58:17.671727",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_110104",
+      "timestamp": "2026-01-10T11:02:03.192415",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_110326",
+      "timestamp": "2026-01-10T11:03:40.917698",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260110_132626",
+      "timestamp": "2026-01-10T13:27:56.919283",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260115_162246",
+      "timestamp": "2026-01-15T16:23:19.320529",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260115_162536",
+      "timestamp": "2026-01-15T16:26:05.859293",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260115_162920",
+      "timestamp": "2026-01-15T16:29:45.299923",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260123_014958",
+      "timestamp": "2026-01-23T01:54:52.925058",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 23,
+        "education": "Bachelor's",
+        "gender": "Female",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Know what it means",
+          "score": 2
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Sometimes",
+          "score": 2
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Once/twice a month",
+          "score": 2
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not very confident",
+          "score": 1
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Confident",
+          "score": 2
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Agree",
+          "score": 2
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 33.33333333333333,
+        "Financial Behavior": 57.14285714285714,
+        "Financial Confidence": 50.0,
+        "Financial Attitudes": 66.66666666666666,
+        "Overall": 51.78571428571428
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260126_223714",
+      "timestamp": "2026-01-26T22:37:53.342020",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260126_232116",
+      "timestamp": "2026-01-26T23:21:48.114016",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260127_001814",
+      "timestamp": "2026-01-27T00:21:05.565902",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260127_003444",
+      "timestamp": "2026-01-27T00:35:05.721988",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260127_003444",
+      "timestamp": "2026-01-27T00:40:35.491887",
+      "test_type": "post",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260127_100336",
+      "timestamp": "2026-01-27T11:03:03.943214",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260127_100336",
+      "timestamp": "2026-01-27T11:08:38.338234",
+      "test_type": "post",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260127_110840",
+      "timestamp": "2026-01-27T11:16:50.290008",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 20,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "FL164Q01",
+          "question": "Have you heard of or learnt about: Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q02",
+          "question": "Have you heard of or learnt about: Compound interest",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL164Q12",
+          "question": "Have you heard of or learnt about: Budget",
+          "category": "Financial Knowledge",
+          "response": "Never heard of it",
+          "score": 0
+        },
+        {
+          "question_id": "FL160Q01",
+          "question": "When buying a product, how often do you compare prices in different shops?",
+          "category": "Financial Behavior",
+          "response": "Never",
+          "score": 0
+        },
+        {
+          "question_id": "FL171Q08",
+          "question": "In the last 12 months, how often have you checked how much money you have?",
+          "category": "Financial Behavior",
+          "response": "Never/Almost never",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q03",
+          "question": "How confident would you feel about understanding bank statements?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL162Q06",
+          "question": "How confident are you about planning spending with consideration of your financial situation?",
+          "category": "Financial Confidence",
+          "response": "Not at all confident",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q05",
+          "question": "To what extent do you agree: I know how to manage my money",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        },
+        {
+          "question_id": "FL169Q10",
+          "question": "To what extent do you agree: I make savings goals for things I want to buy",
+          "category": "Financial Attitudes",
+          "response": "Strongly disagree",
+          "score": 0
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 0.0,
+        "Financial Behavior": 0.0,
+        "Financial Confidence": 0.0,
+        "Financial Attitudes": 0.0,
+        "Overall": 0.0
+      },
+      "model_used": "my-finetuned"
+    }
+  ]
+}

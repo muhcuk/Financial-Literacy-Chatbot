@@ -1,0 +1,147 @@
+{
+  "feedback": [
+    {
+      "user_id": "20251229_000808",
+      "timestamp": "2025-12-29T00:14:19.934195",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Helpful', 'ease_of_use': 'Neutral', 'feedback_text': 'more realistic chat and two way communication', 'useful_topics': ['Other', 'Budgeting'], 'model_used': 'my-finetuned'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20251229_002010",
+      "timestamp": "2025-12-29T00:29:37.348535",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'good', 'useful_topics': ['Saving Money'], 'model_used': 'my-finetuned'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20251229_100916",
+      "timestamp": "2025-12-29T10:15:44.390761",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'yes', 'useful_topics': [], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_110839",
+      "timestamp": "2025-12-29T11:18:10.969733",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'i like how the two way communication between the system and user.', 'useful_topics': ['Saving Money', 'Credit Cards'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_110839",
+      "timestamp": "2025-12-29T11:18:18.507320",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'i like how the two way communication between the system and user.', 'useful_topics': ['Saving Money', 'Credit Cards'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20251229_110839",
+      "timestamp": "2025-12-29T11:18:38.339394",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'i like how the two way communication between the system and user.', 'useful_topics': ['Saving Money', 'Credit Cards'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:27:36.916345",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'more different context', 'useful_topics': ['Saving Money'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:27:57.609812",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'more different context', 'useful_topics': ['Saving Money'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:33:58.019320",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'more different context', 'useful_topics': ['Saving Money'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:34:07.949468",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'more different context', 'useful_topics': ['Saving Money'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:35:01.810089",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'more different context', 'useful_topics': ['Saving Money'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260101_134931",
+      "timestamp": "2026-01-01T14:35:09.957287",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'more different context', 'useful_topics': ['Saving Money'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260103_005022",
+      "timestamp": "2026-01-03T01:03:32.092446",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Helpful', 'ease_of_use': 'Difficult', 'feedback_text': 'nice', 'useful_topics': ['Budgeting'], 'model_used': 'llama3.2'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "llama3.2"
+    }
+  ]
+}

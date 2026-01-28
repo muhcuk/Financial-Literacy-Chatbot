@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProRegular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProRegularItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 250;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProThin.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 250;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProThinItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProLightItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 350;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProBook.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 350;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProBookItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProMediumItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProBoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProHeavy.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProHeavyItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProBlack.woff') format('woff');
+}
+@font-face {
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Filson Pro'), url('https://fonts.cdnfonts.com/s/57464/FilsonProBlackItalic.woff') format('woff');
+}
+
+

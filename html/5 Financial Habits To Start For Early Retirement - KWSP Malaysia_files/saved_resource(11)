@@ -1,0 +1,2 @@
+import*as esModule from"../o/frontend-js-state-web/__liferay__/index.js";Liferay.Loader.define("@liferay/frontend-js-state-web@1.0.14/index",["module"],(function(e){e.exports=esModule}));
+

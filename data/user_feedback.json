@@ -1,0 +1,44 @@
+{
+  "feedback": [
+    {
+      "user_id": "20251120_111505",
+      "timestamp": "2025-11-20T10:15:05.803223",
+      "question": "How can I save money?",
+      "answer": "Sample answer about saving money...",
+      "rating": "helpful",
+      "sources_count": 5
+    },
+    {
+      "user_id": "20251119_111505",
+      "timestamp": "2025-11-19T10:15:05.803223",
+      "question": "How can I save money?",
+      "answer": "Sample answer about saving money...",
+      "rating": "helpful",
+      "sources_count": 3
+    },
+    {
+      "user_id": "20251118_111505",
+      "timestamp": "2025-11-18T10:15:05.803223",
+      "question": "How can I save money?",
+      "answer": "Sample answer about saving money...",
+      "rating": "not_helpful",
+      "sources_count": 4
+    },
+    {
+      "user_id": "20251117_111505",
+      "timestamp": "2025-11-17T10:15:05.803223",
+      "question": "How can I save money?",
+      "answer": "Sample answer about saving money...",
+      "rating": "helpful",
+      "sources_count": 3
+    },
+    {
+      "user_id": "20251116_111505",
+      "timestamp": "2025-11-16T10:15:05.803223",
+      "question": "How can I save money?",
+      "answer": "Sample answer about saving money...",
+      "rating": "helpful",
+      "sources_count": 3
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Liferay.Loader.define("frontend-js-alert-support-web@2.0.10/index",["module","exports","require","frontend-js-web"],(function(e,t,r){window;{Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(){e||(e=(0,d.delegate)(document.body,"click",'[data-dismiss="liferay-alert"]',(e=>{e.preventDefault();const t=e.delegateTarget.closest(".alert");t&&t.parentNode.removeChild(t)})))};var d=r("frontend-js-web");let e}}));
+

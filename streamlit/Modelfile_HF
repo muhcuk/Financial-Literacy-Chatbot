@@ -1,0 +1,11 @@
+# Import from HuggingFace format directly
+FROM C:/Users/User10/Desktop/DEGREE/SEM 6/CSP 650/streamlit/llama_1b_merged_full
+
+# Model parameters
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+PARAMETER num_predict 256
+
+# System prompt
+SYSTEM """You are a helpful financial literacy assistant for Malaysian youth. You provide clear, accurate, and practical financial advice based on Malaysian context, including EPF (KWSP) information and local financial practices."""

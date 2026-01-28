@@ -1,0 +1,344 @@
+{
+  "results": [
+    {
+      "user_id": "20251120_111505",
+      "timestamp": "2025-11-20T09:15:05.803223",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 30,
+        "education": "Master's",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 2",
+          "score": 2
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 1",
+          "score": 1
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 42.08444954999292,
+        "Financial Behavior": 68.10145369251731,
+        "Financial Confidence": 40.40382858654257,
+        "Financial Attitudes": 73.76091010631606,
+        "Overall": 56.087660483842214
+      }
+    },
+    {
+      "user_id": "20251120_111505",
+      "timestamp": "2025-11-20T11:15:05.803223",
+      "test_type": "post",
+      "participant_info": {
+        "age": 30,
+        "education": "Master's",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 54.718388503391715,
+        "Financial Behavior": 80.73539264591611,
+        "Financial Confidence": 53.03776753994137,
+        "Financial Attitudes": 86.39484905971486,
+        "Overall": 68.72159943724101
+      }
+    },
+    {
+      "user_id": "20251119_111505",
+      "timestamp": "2025-11-19T09:15:05.803223",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 24,
+        "education": "Diploma",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 2",
+          "score": 2
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 1",
+          "score": 1
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 65.99995415273548,
+        "Financial Behavior": 52.94981873549502,
+        "Financial Confidence": 46.98849838094475,
+        "Financial Attitudes": 52.694072073299466,
+        "Overall": 54.65808583561868
+      }
+    },
+    {
+      "user_id": "20251119_111505",
+      "timestamp": "2025-11-19T11:15:05.803223",
+      "test_type": "post",
+      "participant_info": {
+        "age": 24,
+        "education": "Diploma",
+        "gender": "Male",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 85.56524330432978,
+        "Financial Behavior": 72.51510788708931,
+        "Financial Confidence": 66.55378753253905,
+        "Financial Attitudes": 72.25936122489375,
+        "Overall": 74.22337498721296
+      }
+    },
+    {
+      "user_id": "20251118_111505",
+      "timestamp": "2025-11-18T09:15:05.803223",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 19,
+        "education": "Secondary School",
+        "gender": "Female",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 2",
+          "score": 2
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 1",
+          "score": 1
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 42.43507635687884,
+        "Financial Behavior": 68.30422543611756,
+        "Financial Confidence": 58.11035707075574,
+        "Financial Attitudes": 62.708396727951886,
+        "Overall": 57.88951389792601
+      }
+    },
+    {
+      "user_id": "20251118_111505",
+      "timestamp": "2025-11-18T11:15:05.803223",
+      "test_type": "post",
+      "participant_info": {
+        "age": 19,
+        "education": "Secondary School",
+        "gender": "Female",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 60.71828230082556,
+        "Financial Behavior": 86.58743138006429,
+        "Financial Confidence": 76.39356301470247,
+        "Financial Attitudes": 80.9916026718986,
+        "Overall": 76.17271984187272
+      }
+    },
+    {
+      "user_id": "20251117_111505",
+      "timestamp": "2025-11-17T09:15:05.803223",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 24,
+        "education": "Diploma",
+        "gender": "Female",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 2",
+          "score": 2
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 1",
+          "score": 1
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 58.57732586984352,
+        "Financial Behavior": 50.42971787972314,
+        "Financial Confidence": 33.59190799831494,
+        "Financial Attitudes": 51.77904520952581,
+        "Overall": 48.594499239351855
+      }
+    },
+    {
+      "user_id": "20251117_111505",
+      "timestamp": "2025-11-17T11:15:05.803223",
+      "test_type": "post",
+      "participant_info": {
+        "age": 24,
+        "education": "Diploma",
+        "gender": "Female",
+        "occupation": "Student"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 72.24313399633026,
+        "Financial Behavior": 64.09552600620988,
+        "Financial Confidence": 47.257716124801675,
+        "Financial Attitudes": 65.44485333601256,
+        "Overall": 62.26030736583859
+      }
+    },
+    {
+      "user_id": "20251116_111505",
+      "timestamp": "2025-11-16T09:15:05.803223",
+      "test_type": "pre",
+      "participant_info": {
+        "age": 21,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Self-employed"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 2",
+          "score": 2
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 1",
+          "score": 1
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 55.63470143928418,
+        "Financial Behavior": 58.35491363086071,
+        "Financial Confidence": 50.032993209650186,
+        "Financial Attitudes": 56.11313622397715,
+        "Overall": 55.03393612594306
+      }
+    },
+    {
+      "user_id": "20251116_111505",
+      "timestamp": "2025-11-16T11:15:05.803223",
+      "test_type": "post",
+      "participant_info": {
+        "age": 21,
+        "education": "Secondary School",
+        "gender": "Male",
+        "occupation": "Self-employed"
+      },
+      "responses": [
+        {
+          "question_id": "Q1",
+          "question": "Interest payment",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        },
+        {
+          "question_id": "Q2",
+          "question": "Budget",
+          "category": "Financial Knowledge",
+          "response": "Option 3",
+          "score": 3
+        }
+      ],
+      "scores": {
+        "Financial Knowledge": 71.92697963776104,
+        "Financial Behavior": 74.64719182933756,
+        "Financial Confidence": 66.32527140812704,
+        "Financial Attitudes": 72.405414422454,
+        "Overall": 71.32621432441991
+      }
+    }
+  ]
+}

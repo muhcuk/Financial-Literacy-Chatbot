@@ -1,0 +1,66 @@
+.lfr-layout-structure-item-container {padding: 0;}.lfr-layout-structure-item-row {overflow: hidden;}.lfr-layout-structure-item-22e6276d-c733-55e6-d25f-4f2e810062a5 {
+display: none !important;
+}
+.lexicon-icon-twitter use {
+    display: none; /* Hide the existing SVG reference */
+}
+
+.lexicon-icon-twitter {
+    background-image: url("https://www.kwsp.gov.my/documents/20119/0/icons8-x%20%281%29.svg/");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+}
+.lexicon-icon-social-facebook use {
+    display: none; /* Hide the existing SVG reference */
+}
+
+.lexicon-icon-social-facebook {
+    background-image: url("https://www.kwsp.gov.my/documents/20119/0/icons8-facebook.svg"); /* Replace with the new icon */
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 24px; /* Adjust size if necessary */
+    height: 24px; /* Adjust size if necessary */
+}
+.lexicon-icon-social-linkedin use {
+    display: none; /* Hide the existing SVG reference */
+}
+
+.lexicon-icon-social-linkedin {
+    background-image: url("https://www.kwsp.gov.my/documents/20119/0/icons8-linkedin.svg"); /* Replace with the new icon */
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}.lfr-layout-structure-item-87cf9dc8-8e20-55b1-adcc-f8c9cd08cd2f {
+display: none !important;
+}
+.article-container {
+    margin-bottom: 50px !important;
+}
+h2 {
+  font-size: 24px; 
+}h2 {
+  font-size: 24px;
+}
+.accordion-item:has(h3:empty, p:empty) {
+    display: none;
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .article-image img {
+        height: auto !important; /* Overrides inline height */
+    }
+}
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .article-image {
+        height: 290px !important; /* Removes fixed height */
+    }
+}@media (max-width: 768px) {
+  .c-mt-8, .c-my-8 {
+    margin-top: 7.5rem !important;
+  }
+}
