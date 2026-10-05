@@ -1,18 +1,18 @@
-# 💰 Financial Literacy Chatbot
+# Financial Literacy Chatbot
 
 An AI-powered chatbot designed to improve financial literacy among Malaysian youth through Retrieval-Augmented Generation (RAG) with interactive pre/post assessments based on PISA Financial Literacy Framework.
 
-## ✨ Features
+## Features
 
-- **📚 RAG-Powered Responses** - Retrieves relevant information from a curated financial knowledge base
-- **🔄 Multiple RAG Modes** - Strict, Hybrid, and Model-only modes for flexible response generation
-- **📊 PISA-Based Assessment** - Pre/post tests measuring Financial Knowledge, Behavior, Confidence & Attitudes
-- **🎯 Intent Detection** - Automatically detects query type (tips, mistakes, steps, etc.) for better formatting
-- **🔍 Query Expansion** - Enhances search queries for improved retrieval accuracy
-- **📝 Source Citations** - Links responses to verified Malaysian financial resources (KWSP, etc.)
-- **🇲🇾 Malaysia Context** - EPF/KWSP, LHDN tax, Malaysian ringgit-focused content
+- **RAG-Powered Responses** - Retrieves relevant information from a curated financial knowledge base
+- **Multiple RAG Modes** - Strict, Hybrid, and Model-only modes for flexible response generation
+- **PISA-Based Assessment** - Pre/post tests measuring Financial Knowledge, Behavior, Confidence & Attitudes
+- **Intent Detection** - Automatically detects query type (tips, mistakes, steps, etc.) for better formatting
+- **Query Expansion** - Enhances search queries for improved retrieval accuracy
+- **Source Citations** - Links responses to verified Malaysian financial resources (KWSP, etc.)
+- **Malaysia Context** - EPF/KWSP, LHDN tax, Malaysian ringgit-focused content
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** Streamlit
 - **LLM:** Ollama (supports custom fine-tuned models)
@@ -20,7 +20,7 @@ An AI-powered chatbot designed to improve financial literacy among Malaysian you
 - **Vector Database:** ChromaDB
 - **Framework:** LangChain
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -34,7 +34,7 @@ cd streamlit
 streamlit run s_app.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── streamlit/
@@ -45,18 +45,18 @@ streamlit run s_app.py
 └── finance_db/           # ChromaDB vector store (generated)
 ```
 
-## 🎯 Topics Covered
+## Topics Covered
 
-- 💰 Budgeting (50/30/20 rule)
-- 🏦 Saving & Emergency funds
-- 💳 Debt management
-- 📈 Investment basics
-- 🏥 Insurance planning
-- 🧾 Tax filing (LHDN)
-- 👴 Retirement planning (EPF/KWSP)
-- ⚠️ Scam prevention
+- Budgeting (50/30/20 rule)
+- Saving and emergency funds
+- Debt management
+- Investment basics
+- Insurance planning
+- Tax filing (LHDN)
+- Retirement planning (EPF/KWSP)
+- Scam prevention
 
-## 📊 Assessment Framework
+## Assessment Framework
 
 Based on **PISA Financial Literacy Framework**:
 - Financial Knowledge
@@ -64,6 +64,6 @@ Based on **PISA Financial Literacy Framework**:
 - Financial Confidence
 - Financial Attitudes
 
-## 📄 License
+## License
 
 MIT License

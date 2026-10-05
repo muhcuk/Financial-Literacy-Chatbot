@@ -20,7 +20,6 @@ EMB_MODEL = "intfloat/multilingual-e5-small"
 # --- Page Configuration ---
 st.set_page_config(
     page_title="Financial Literacy Chatbot",
-    page_icon="💰",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -262,20 +261,20 @@ def handle_out_of_scope(query: str) -> tuple:
     response = """I'm specialized in **financial literacy education** using Malaysian EPF/KWSP resources. 
 
 I can help you with:
-✅ Budgeting strategies (50/30/20 rule)
-✅ Saving and emergency funds
-✅ Debt management
-✅ Investment basics and principles
-✅ Retirement planning (EPF/KWSP)
-✅ Insurance planning
-✅ Tax filing (LHDN)
-✅ Scam prevention
+Budgeting strategies (50/30/20 rule)
+Saving and emergency funds
+Debt management
+Investment basics and principles
+Retirement planning (EPF/KWSP)
+Insurance planning
+Tax filing (LHDN)
+Scam prevention
 
 However, I don't have access to:
-❌ Real-time stock prices
-❌ Current exchange rates  
-❌ Today's news or events
-❌ Live market data
+Real-time stock prices
+Current exchange rates
+Today's news or events
+Live market data
 
 For real-time information, I recommend:
 - **Stock prices**: Google Finance, Yahoo Finance
@@ -1131,21 +1130,21 @@ def is_greeting(text: str) -> bool:
 # --- UI Pages ---
 def show_welcome_page():
     """Welcome page"""
-    st.markdown('<p class="main-header">💰 Financial Literacy Chatbot</p>', unsafe_allow_html=True)
+    st.markdown('<p class="main-header">Financial Literacy Chatbot</p>', unsafe_allow_html=True)
     
     st.markdown("""
-    ### Welcome! 👋
+    ### Welcome
     
     This AI-powered chatbot helps you learn about financial literacy using information from 
     **Malaysian EPF (KWSP)** and financial education resources.
     
-    #### 📋 How it works:
+    #### How it works:
     1. **Pre-Test** - Complete a short quiz to assess your current financial knowledge
     2. **Learn** - Ask the chatbot any questions about financial literacy
     3. **Post-Test** - Take the quiz again to see your improvement
     4. **Results** - View your learning progress
     
-    #### ⏱️ Time Required:
+    #### Time Required:
     - Pre-test: ~5 minutes
     - Chatbot interaction: 15-20 minutes (recommended)
     - Post-test: ~5 minutes
@@ -1157,13 +1156,13 @@ def show_welcome_page():
     
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("🚀 Start Pre-Test", type="primary", use_container_width=True):
+        if st.button("Start Pre-Test", type="primary", use_container_width=True):
             st.session_state.current_page = "pre_test"
             st.rerun()
 
 def show_pisa_test(test_type="pre"):
     """Show PISA test"""
-    st.title(f"📋 {'Pre' if test_type == 'pre' else 'Post'}-Test: Financial Literacy Assessment")
+    st.title(f"{'Pre' if test_type == 'pre' else 'Post'}-Test: Financial Literacy Assessment")
     
     st.markdown(f"""
     ### {f'Let us assess your current financial knowledge' if test_type == 'pre' else 'Final Assessment - See Your Progress!'}
@@ -1174,7 +1173,7 @@ def show_pisa_test(test_type="pre"):
     """)
     
     if test_type == "pre":
-        with st.expander("👤 Your Information", expanded=True):
+        with st.expander("Your Information", expanded=True):
             col1, col2 = st.columns(2)
             with col1:
                 age = st.number_input("Age", min_value=15, max_value=99, value=20)
@@ -1201,7 +1200,7 @@ def show_pisa_test(test_type="pre"):
     question_number = 1
     
     for category, questions in PISA_QUESTIONS.items():
-        st.subheader(f"📊 {category}")
+        st.subheader(category)
         
         for q in questions:
             st.markdown(f"**Q{question_number}. {q['question']}**")
@@ -1228,7 +1227,7 @@ def show_pisa_test(test_type="pre"):
     
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("📤 Submit Assessment", type="primary", use_container_width=True):
+        if st.button("Submit Assessment", type="primary", use_container_width=True):
             scores = calculate_scores(all_responses)
             save_test_results(test_type, participant_info, all_responses, scores)
             
@@ -1241,7 +1240,7 @@ def show_pisa_test(test_type="pre"):
                 st.session_state.post_test_scores = scores
                 st.session_state.current_page = "results"
             
-            st.success("✅ Assessment submitted!")
+            st.success("Assessment submitted.")
             st.balloons()
             st.rerun()
 
@@ -1250,17 +1249,17 @@ def show_chatbot_page():
     # Header with Post-Test button on the right
     col_title, col_btn = st.columns([4, 1])
     with col_title:
-        st.markdown('<div class="main-header">💰 Financial Literacy Chatbot</div>', unsafe_allow_html=True)
+        st.markdown('<div class="main-header">Financial Literacy Chatbot</div>', unsafe_allow_html=True)
     with col_btn:
-        if st.button("📝 Take Post-Test", type="primary", use_container_width=True):
+        if st.button("Take Post-Test", type="primary", use_container_width=True):
             st.session_state.current_page = "post_test"
             st.rerun()
     
     try:
         db, llm = load_resources(st.session_state.selected_model)
     except Exception as e:
-        st.error(f"❌ Error loading model '{st.session_state.selected_model}': {str(e)}")
-        st.info("💡 Make sure the model is imported to Ollama. Run: `ollama list` to check available models")
+        st.error(f"Error loading model '{st.session_state.selected_model}': {str(e)}")
+        st.info("Make sure the model is imported to Ollama. Run: `ollama list` to check available models")
         return
     
     for message in st.session_state.messages:
@@ -1497,21 +1496,21 @@ def show_chatbot_page():
                 if 'animation_thread' in locals():
                     animation_thread.join()
                 
-                error_msg = f"❌ Error: {str(e)}"
+                error_msg = f"Error: {str(e)}"
                 message_placeholder.markdown(error_msg)
                 
                 if "model" in str(e).lower() or "not found" in str(e).lower():
                     st.error(f"Model '{st.session_state.selected_model}' not found in Ollama.")
-                    st.info("💡 Run `ollama list` to see available models, or import your model first.")
+                    st.info("Run `ollama list` to see available models, or import your model first.")
 
 def show_results_page():
     """Show final results and improvement"""
-    st.title("🎉 Congratulations! You've Completed the Assessment")
+    st.title("Congratulations! You've Completed the Assessment")
     
     pre_scores = st.session_state.get("pre_test_scores", {})
     post_scores = st.session_state.get("post_test_scores", {})
     
-    st.subheader("📊 Your Progress")
+    st.subheader("Your Progress")
     
     categories = ["Financial Knowledge", "Financial Behavior", "Financial Confidence", "Financial Attitudes", "Overall"]
     
@@ -1538,17 +1537,17 @@ def show_results_page():
     overall_improvement = post_scores.get("Overall", 0) - pre_scores.get("Overall", 0)
     
     if overall_improvement > 15:
-        st.success(f"🌟 **Excellent Progress!** You improved by {overall_improvement:.1f}% overall!")
+        st.success(f"**Excellent Progress!** You improved by {overall_improvement:.1f}% overall!")
     elif overall_improvement > 5:
-        st.info(f"✅ **Good Work!** You improved by {overall_improvement:.1f}%")
+        st.info(f"**Good Work!** You improved by {overall_improvement:.1f}%")
     elif overall_improvement > 0:
-        st.info(f"👍 **You Improved!** +{overall_improvement:.1f}%")
+        st.info(f"**You Improved!** +{overall_improvement:.1f}%")
     else:
         st.warning("Consider spending more time learning with the chatbot.")
     
     st.divider()
     
-    st.subheader("💭 We'd Love Your Feedback!")
+    st.subheader("We'd Love Your Feedback")
     
     with st.form("feedback_form"):
         st.write("Please share your experience with the Financial Literacy Chatbot:")
@@ -1602,20 +1601,20 @@ def show_results_page():
                     rating.split()[1].lower()
                 )
                 
-                st.success("✅ Thank you for your feedback!")
+                st.success("Thank you for your feedback!")
                 st.balloons()
             else:
                 st.warning("Please provide some feedback in the text area.")
     
     st.divider()
     
-    st.markdown("### 💡 Thank you for participating!")
+    st.markdown("### Thank you for participating!")
     st.markdown("Your feedback helps us improve the chatbot for future users.")
     
-    st.subheader("🔄 Next Steps")
+    st.subheader("Next Steps")
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("👤 Start New User Session", type="primary", use_container_width=True):
+        if st.button("Start New User Session", type="primary", use_container_width=True):
             reset_session()
             st.rerun()
     
@@ -1625,15 +1624,15 @@ def show_admin_dashboard():
     """Admin page to view all user results"""
     col1, col2, col3 = st.columns([4, 1, 1])
     with col1:
-        st.title("👨‍💼 Admin Dashboard")
+        st.title("Admin Dashboard")
     with col3:
-        if st.button("🚪 Logout", type="secondary"):
+        if st.button("Logout", type="secondary"):
             st.session_state.current_page = "welcome"
             st.rerun()
     
     st.divider()
     
-    tab1, tab2, tab3 = st.tabs(["📊 Test Results", "💬 Feedback", "📈 Analytics"])
+    tab1, tab2, tab3 = st.tabs(["Test Results", "Feedback", "Analytics"])
     
     with tab1:
         st.subheader("All Test Results")
@@ -1697,9 +1696,9 @@ def show_admin_dashboard():
                 with col1:
                     st.metric("Total Feedback", len(feedbacks))
                 with col2:
-                    st.metric("👍 Helpful", helpful)
+                    st.metric("Helpful", helpful)
                 with col3:
-                    st.metric("👎 Not Helpful", not_helpful)
+                    st.metric("Not Helpful", not_helpful)
                 
                 st.divider()
                 
@@ -1708,7 +1707,7 @@ def show_admin_dashboard():
                     model_used = fb.get("model_used", "unknown")
                     
                     if feedback_type == "general":
-                        with st.expander(f"💭 General Feedback - {fb['timestamp'][:10]} - Model: {model_used}"):
+                        with st.expander(f"General Feedback - {fb['timestamp'][:10]} - Model: {model_used}"):
                             st.write(f"**User:** {fb['user_id']}")
                             st.write(f"**Rating:** {fb['rating'].upper()}")
                             st.write(f"**Feedback:**")
@@ -1776,7 +1775,7 @@ def main():
     
     # Preload resources at startup (runs once, cached thereafter)
     if not st.session_state.resources_loaded:
-        with st.spinner("🚀 Loading AI resources... (first time only)"):
+        with st.spinner("Loading AI resources... (first time only)"):
             try:
                 load_resources("my-finetuned")
                 st.session_state.resources_loaded = True
@@ -1784,17 +1783,17 @@ def main():
                 st.error(f"Failed to preload resources: {e}")
     
     with st.sidebar:
-        st.title("📍 Navigation")
+        st.title("Navigation")
         
         if st.session_state.current_page == "welcome":
-            st.info("👋 Welcome Page")
+            st.info("Welcome Page")
         elif not st.session_state.pre_test_completed:
-            st.info("📝 Pre-Test")
+            st.info("Pre-Test")
         elif not st.session_state.post_test_completed:
-            st.success("✅ Pre-Test Done")
-            st.info("💬 Using Chatbot")
+            st.success("Pre-Test Done")
+            st.info("Using Chatbot")
         else:
-            st.success("✅ All Complete!")
+            st.success("All Complete!")
         
         #st.divider()
         
@@ -1804,7 +1803,7 @@ def main():
         
         st.divider()
         
-        st.header("📊 Progress")
+        st.header("Progress")
         progress = 0
         if st.session_state.pre_test_completed:
             progress += 33
@@ -1819,10 +1818,10 @@ def main():
         st.divider()
         
         # NEW USER RESET BUTTON
-        if st.button("🔄 New User", help="Reset for a new participant"):
+        if st.button("New User", help="Reset for a new participant"):
             if st.session_state.current_page not in ["welcome", "admin"]:
-                st.warning("⚠️ This will reset all progress!")
-                if st.button("✅ Confirm Reset"):
+                st.warning("This will reset all progress!")
+                if st.button("Confirm Reset"):
                     reset_session()
                     st.rerun()
             else:
@@ -1831,26 +1830,26 @@ def main():
         
         st.divider()
         
-        st.header("ℹ️ About")
+        st.header("About")
         st.markdown("""
         This chatbot uses:
-        - 🤖 RAG (Retrieval-Augmented Generation)
-        - 📚 KWSP/EPF Resources
-        - 📋 PISA 2022 Framework
-        - 🎯 Multiple AI Models
+        - RAG (Retrieval-Augmented Generation)
+        - KWSP/EPF Resources
+        - PISA 2022 Framework
+        - Multiple AI Models
         """)
         
         st.divider()
         
         admin_password = st.text_input("Admin Access", type="password")
         if admin_password == "admin123":
-            if st.button("📊 View Dashboard"):
+            if st.button("View Dashboard"):
                 st.session_state.current_page = "admin"
                 st.rerun()
         
         st.divider()
         
-        if st.button("🗑️ Clear Chat"):
+        if st.button("Clear Chat"):
             st.session_state.messages = []
             st.rerun()
     

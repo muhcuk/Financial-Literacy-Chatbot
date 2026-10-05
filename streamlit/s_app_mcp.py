@@ -26,7 +26,6 @@ EMB_MODEL = "intfloat/multilingual-e5-small"
 # --- Page Configuration ---
 st.set_page_config(
     page_title="Financial Literacy Chatbot (MCP)",
-    page_icon="💰",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -501,21 +500,21 @@ def is_greeting(text: str) -> bool:
 # =============================================================================
 
 def show_welcome_page():
-    st.markdown('<p class="main-header">💰 Financial Literacy Chatbot</p>', unsafe_allow_html=True)
-    st.markdown('<span class="mcp-badge">🔒 MCP Mode - Reduced Hallucination</span>', unsafe_allow_html=True)
+    st.markdown('<p class="main-header">Financial Literacy Chatbot</p>', unsafe_allow_html=True)
+    st.markdown('<span class="mcp-badge">MCP Mode - Reduced Hallucination</span>', unsafe_allow_html=True)
     
     st.markdown("""
-    ### Welcome! 👋
+    ### Welcome
     
     This is the **MCP (Model Context Protocol) version** of the chatbot.
     
-    #### 🔒 What's different in MCP Mode?
+    #### What's different in MCP Mode?
     - **Structured responses**: The AI only presents verified facts from the knowledge base
     - **Exact calculations**: Financial calculations use precise formulas (no guessing)
     - **Source citations**: Every fact is linked to its source
     - **Honest uncertainty**: If information isn't available, the chatbot will tell you
     
-    #### 📋 How it works:
+    #### How it works:
     1. **Pre-Test** - Complete a short quiz to assess your current financial knowledge
     2. **Learn** - Ask the chatbot questions (responses are strictly from verified sources)
     3. **Post-Test** - Take the quiz again to see your improvement
@@ -527,16 +526,16 @@ def show_welcome_page():
     
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("🚀 Start Pre-Test", type="primary", use_container_width=True):
+        if st.button("Start Pre-Test", type="primary", use_container_width=True):
             st.session_state.current_page = "pre_test"
             st.rerun()
     
     st.markdown("---")
-    st.caption("💡 To use the original version (without MCP), run: `streamlit run s_app.py`")
+    st.caption("To use the original version (without MCP), run: `streamlit run s_app.py`")
 
 
 def show_pisa_test(test_type="pre"):
-    st.title(f"📋 {'Pre' if test_type == 'pre' else 'Post'}-Test: Financial Literacy Assessment")
+    st.title(f"{'Pre' if test_type == 'pre' else 'Post'}-Test: Financial Literacy Assessment")
     
     st.markdown(f"""
     ### {f'Let us assess your current financial knowledge' if test_type == 'pre' else 'Final Assessment - See Your Progress!'}
@@ -545,7 +544,7 @@ def show_pisa_test(test_type="pre"):
     """)
     
     if test_type == "pre":
-        with st.expander("👤 Your Information", expanded=True):
+        with st.expander("Your Information", expanded=True):
             col1, col2 = st.columns(2)
             with col1:
                 age = st.number_input("Age", min_value=15, max_value=99, value=20)
@@ -565,7 +564,7 @@ def show_pisa_test(test_type="pre"):
     question_number = 1
     
     for category, questions in PISA_QUESTIONS.items():
-        st.subheader(f"📊 {category}")
+        st.subheader(category)
         for q in questions:
             st.markdown(f"**Q{question_number}. {q['question']}**")
             response = st.radio("Select your answer:", options=q["options"], key=f"{test_type}_{q['id']}", label_visibility="collapsed")
@@ -576,7 +575,7 @@ def show_pisa_test(test_type="pre"):
     
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("📤 Submit Assessment", type="primary", use_container_width=True):
+        if st.button("Submit Assessment", type="primary", use_container_width=True):
             scores = calculate_scores(all_responses)
             save_test_results(test_type, participant_info, all_responses, scores)
             
@@ -589,22 +588,22 @@ def show_pisa_test(test_type="pre"):
                 st.session_state.post_test_scores = scores
                 st.session_state.current_page = "results"
             
-            st.success("✅ Assessment submitted!")
+            st.success("Assessment submitted.")
             st.balloons()
             st.rerun()
 
 
 def show_chatbot_page():
-    st.markdown('<p class="main-header">💰 Financial Literacy Chatbot</p>', unsafe_allow_html=True)
-    st.markdown('<span class="mcp-badge">🔒 MCP Mode - Verified Responses Only</span>', unsafe_allow_html=True)
+    st.markdown('<p class="main-header">Financial Literacy Chatbot</p>', unsafe_allow_html=True)
+    st.markdown('<span class="mcp-badge">MCP Mode - Verified Responses Only</span>', unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.success("✅ Pre-Test Complete")
+        st.success("Pre-Test Complete")
     with col2:
-        st.info("💬 Using MCP-Verified Mode")
+        st.info("Using MCP-Verified Mode")
     with col3:
-        if st.button("📝 Take Post-Test"):
+        if st.button("Take Post-Test"):
             st.session_state.current_page = "post_test"
             st.rerun()
     
@@ -738,14 +737,14 @@ def show_chatbot_page():
 
 
 def show_results_page():
-    st.title("🎉 Congratulations! Assessment Complete")
-    st.markdown('<span class="mcp-badge">🔒 MCP Mode Results</span>', unsafe_allow_html=True)
+    st.title("Congratulations! Assessment Complete")
+    st.markdown('<span class="mcp-badge">MCP Mode Results</span>', unsafe_allow_html=True)
     
     pre_scores = st.session_state.get("pre_test_scores", {})
     post_scores = st.session_state.get("post_test_scores", {})
     
     if pre_scores and post_scores:
-        st.subheader("📊 Your Progress")
+        st.subheader("Your Progress")
         
         col1, col2, col3 = st.columns(3)
         with col1:
@@ -760,7 +759,7 @@ def show_results_page():
         
         st.divider()
         
-        st.subheader("📈 Score Breakdown by Category")
+        st.subheader("Score Breakdown by Category")
         for category in ["Financial Knowledge", "Financial Behavior", "Financial Confidence", "Financial Attitudes"]:
             pre_cat = pre_scores.get(category, 0)
             post_cat = post_scores.get(category, 0)
@@ -783,11 +782,11 @@ def show_results_page():
     
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("🔄 Start New Session", type="primary"):
+        if st.button("Start New Session", type="primary"):
             reset_session()
             st.rerun()
     with col2:
-        if st.button("💬 Continue Chatting"):
+        if st.button("Continue Chatting"):
             st.session_state.current_page = "chatbot"
             st.rerun()
 
@@ -799,12 +798,12 @@ def show_results_page():
 def main():
     # Sidebar
     with st.sidebar:
-        st.title("⚙️ Settings")
+        st.title("Settings")
         st.markdown('<span class="mcp-badge">MCP Mode</span>', unsafe_allow_html=True)
         
         st.divider()
         
-        if st.button("🔄 New Session"):
+        if st.button("New Session"):
             reset_session()
             st.rerun()
         
