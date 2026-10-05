@@ -29,9 +29,12 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main-header {
-        font-size: 3rem;
-        font-weight: bold;
-        color: #FFD700;
+        font-size: 4rem !important;
+        font-weight: 900 !important;
+        color: #FFD700 !important;
+        margin-bottom: 1rem !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+        line-height: 1.2 !important;
     }
     .quiz-card {
         padding: 1.5rem;
@@ -45,6 +48,20 @@ st.markdown("""
         border-radius: 0.5rem;
         background-color: #2b313e;
         text-align: center;
+    }
+    .top-header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .post-test-btn {
+        background-color: #FFD700;
+        color: #000;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        text-decoration: none;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -209,6 +226,66 @@ def load_resources(model_name):
     db = load_database(embeddings)
     llm = load_llm(model_name)
     return db, llm
+
+# Around line 212-213 (after load_resources, before save_test_results)
+
+def detect_realtime_query(query: str) -> bool:
+    """Detect if query needs real-time data (stocks, exchange rates, news)"""
+    query_lower = query.lower()
+    
+    # Specific patterns that indicate real-time data needs
+    realtime_patterns = [
+        "stock price", "share price", "stock market",
+        "exchange rate", "currency rate", "forex",
+        "today's news", "latest news", "recent news",
+        "market price", "trading price", "live price",
+        "price of bitcoin", "crypto price", "gold price",
+        "what is the price", "how much is"
+    ]
+    
+    # Check for specific real-time patterns
+    if any(pattern in query_lower for pattern in realtime_patterns):
+        return True
+    
+    # Check for stock ticker mentions (e.g., NVDA, TSLA, AAPL)
+    stock_tickers = ["nvda", "nvidia", "tsla", "tesla", "aapl", "apple stock", 
+                     "google stock", "meta stock", "amazon stock"]
+    if any(ticker in query_lower for ticker in stock_tickers):
+        return True
+    
+    return False
+
+
+def handle_out_of_scope(query: str) -> tuple:
+    """Handle queries outside knowledge base with helpful redirection"""
+    
+    response = """I'm specialized in **financial literacy education** using Malaysian EPF/KWSP resources. 
+
+I can help you with:
+✅ Budgeting strategies (50/30/20 rule)
+✅ Saving and emergency funds
+✅ Debt management
+✅ Investment basics and principles
+✅ Retirement planning (EPF/KWSP)
+✅ Insurance planning
+✅ Tax filing (LHDN)
+✅ Scam prevention
+
+However, I don't have access to:
+❌ Real-time stock prices
+❌ Current exchange rates  
+❌ Today's news or events
+❌ Live market data
+
+For real-time information, I recommend:
+- **Stock prices**: Google Finance, Yahoo Finance
+- **Exchange rates**: XE.com, Google
+- **News**: The Edge Malaysia, Bloomberg
+
+Would you like to learn about **investment principles** or **how to evaluate stocks** instead?"""
+    
+    # Return empty sources list
+    return response, []
 
 # --- Data Storage Functions ---
 def save_test_results(test_type, participant_info, responses, scores):
@@ -409,6 +486,11 @@ def run_rag_chain(query: str, db, llm, rag_mode: str = "Strict"):
 
     rag_mode: "Strict" | "Hybrid" | "Model-only"
     """
+
+    # Check for real-time data requests (stocks, exchange rates, etc.)
+    if detect_realtime_query(query):
+        return handle_out_of_scope(query)
+    
     expanded_query = rewrite_query(query)
     intent = detect_query_intent(query)
 
@@ -847,6 +929,88 @@ ARTICLE_URLS = {
         "title": "Breaking the Chains of Debt",
         "url": "https://www.akpk.org.my/sites/default/files/2025-02/ARTICLE%208%20%28BREAKING%20THE%20CHAINS%29.pdf"
     },
+    # www_kwsp.gov numbered files
+    "www_kwsp.gov (1)": {
+        "title": "Don't Be a Victim of Online Theft",
+        "url": "https://www.kwsp.gov.my/en/w/article/how-to-avoid-online-scam"
+    },
+    "www_kwsp.gov (2)": {
+        "title": "Celebrate Merdeka With A New Beginning Towards Financial Independence",
+        "url": "https://www.kwsp.gov.my/en/w/article/financial-independence"
+    },
+    "www_kwsp.gov (3)": {
+        "title": "Red Flags To Watch Out For In Scams",
+        "url": "https://www.kwsp.gov.my/en/w/article/scam-red-flags"
+    },
+    "www_kwsp.gov (4)": {
+        "title": "Stop Living Paycheck To Paycheck",
+        "url": "https://www.kwsp.gov.my/en/w/article/surviving-on-paycheck"
+    },
+    "www_kwsp.gov (5)": {
+        "title": "How to Lose Your Savings In 10 Days",
+        "url": "https://www.kwsp.gov.my/en/w/article/quick-ways-to-lose-savings"
+    },
+    "www_kwsp.gov (6)": {
+        "title": "5 Reasons Why You Should Save Money",
+        "url": "https://www.kwsp.gov.my/en/w/article/reasons-to-save-money"
+    },
+    "www_kwsp.gov (7)": {
+        "title": "Financial Milestones To Achieve Before Turning 30",
+        "url": "https://www.kwsp.gov.my/en/w/article/achieve-money-goal"
+    },
+    "www_kwsp.gov (8)": {
+        "title": "Save Smarter: Secure Your Future with EPF",
+        "url": "https://www.kwsp.gov.my/en/w/article/invest-smarter"
+    },
+    "www_kwsp.gov (9)": {
+        "title": "Are Your Savings Sufficient For A Comfortable Future?",
+        "url": "https://www.kwsp.gov.my/en/w/article/retirement-calculator"
+    },
+    "www_kwsp.gov (10)": {
+        "title": "Emergency Fund: Why You Need One",
+        "url": "https://www.kwsp.gov.my/en/w/article/emergency-fund"
+    },
+    "www_kwsp.gov (11)": {
+        "title": "Reward Yourself Without Hurting Your Financial Goals",
+        "url": "https://www.kwsp.gov.my/en/w/article/reward-yourself"
+    },
+    "www_kwsp.gov (12)": {
+        "title": "3 Unwise Spending Habits in Your 20s",
+        "url": "https://www.kwsp.gov.my/en/w/article/unwise-spending-habits"
+    },
+    "www_kwsp.gov": {
+        "title": "BNPL: Every Shopaholic's Dream Come True",
+        "url": "https://www.kwsp.gov.my/en/w/article/buy-first-think-later"
+    },
+    "www_laluarahsiad": {
+        "title": "5 Mistakes Young Adults Make With Money",
+        "url": "https://www.laluarahsiad.com/blog-2/blog2"
+    },
+    # Malaysian Financial Reports and Surveys
+    "rmfls_2025_survey_report": {
+        "title": "Malaysian Financial Literacy Survey 2025",
+        "url": "https://media.ringgitplus.com/s/pdf/campaigns/RMFLS-2025-Survey-Report-Final.pdf"
+    },
+    "rmfls_2024_survey_report": {
+        "title": "Malaysian Financial Literacy Survey 2024",
+        "url": "https://ringgitplus.com/en/blog/wp-content/uploads/2024/09/RMFLS-2024-Survey-Report.pdf"
+    },
+    "fsr25h1_en_book": {
+        "title": "Financial Stability Review First Half 2025",
+        "url": "https://www.bnm.gov.my/documents/20124/19635466/fsr25h1_en_book.pdf"
+    },
+    "hies_income": {
+        "title": "Household Income Survey Report 2022",
+        "url": "https://storage.dosm.gov.my/technotes/hies_income.pdf"
+    },
+    "fen_ns2_eng_interactive": {
+        "title": "Malaysia National Strategy for Financial Literacy",
+        "url": "https://www.fenetwork.my/wp-content/uploads/2025/10/FEN_NS2_ENG_Interactive_FA_LowRes.pdf"
+    },
+    "ctos_state_of_consumer_credit_2022": {
+        "title": "Malaysia State of Consumer Credit 2022",
+        "url": "https://ctoscredit.com.my/wp-content/uploads/2023/02/CTOS-State-of-Consumer-Credit-2022-Malaysia.pdf"
+    },
 }
 
 
@@ -939,14 +1103,29 @@ def extract_source_url(metadata: dict) -> str:
 
 
 def is_greeting(text: str) -> bool:
-    """Return True if the text looks like a simple greeting."""
+    """Return True if the text looks like a greeting or introduction."""
     if not text:
         return False
     t = text.strip().lower()
-    greetings = ["hi", "hello", "hey", "hiya", "good morning", "good afternoon", "good evening", "yo"]
-    # treat very short greetings or single-word matches as greeting
-    if t in greetings or len(t.split()) <= 2 and any(t.startswith(g) for g in greetings):
+    
+    # Simple greetings
+    greetings = ["hi", "hello", "hey", "hiya", "good morning", "good afternoon", "good evening", "yo", "hai"]
+    
+    # Introduction patterns
+    intro_patterns = ["my name is", "i am ", "i'm ", "nama saya", "saya "]
+    
+    # Check for simple greetings
+    if t in greetings:
         return True
+    
+    # Check if starts with greeting (even with more text)
+    if any(t.startswith(g) for g in greetings):
+        return True
+    
+    # Check for introductions
+    if any(pattern in t for pattern in intro_patterns):
+        return True
+    
     return False
 
 # --- UI Pages ---
@@ -1068,15 +1247,12 @@ def show_pisa_test(test_type="pre"):
 
 def show_chatbot_page():
     """Main chatbot interface"""
-    st.markdown('<p class="main-header">💰 Financial Literacy Chatbot</p>', unsafe_allow_html=True)
-    
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.success("✅ Pre-Test Complete")
-    with col2:
-        st.info("💬 Currently Using Chatbot")
-    with col3:
-        if st.button("📝 Take Post-Test"):
+    # Header with Post-Test button on the right
+    col_title, col_btn = st.columns([4, 1])
+    with col_title:
+        st.markdown('<div class="main-header">💰 Financial Literacy Chatbot</div>', unsafe_allow_html=True)
+    with col_btn:
+        if st.button("📝 Take Post-Test", type="primary", use_container_width=True):
             st.session_state.current_page = "post_test"
             st.rerun()
     
@@ -1159,11 +1335,37 @@ def show_chatbot_page():
                 short_circuit = False
                 # Greeting shortcut: handle simple salutations without running RAG
                 if is_greeting(prompt):
-                    full_response = (
-                        "Hello! I understand that a greeting means you'd like to start a conversation. "
-                        "As a financial literacy chatbot, I'm here to help with questions about budgeting, saving, investing, debt, retirement (EPF/KWSP), and other personal finance topics. "
-                        "How can I assist you today?"
-                    )
+                    # Try to extract name from introduction
+                    prompt_lower = prompt.lower()
+                    name = ""
+                    for pattern in ["my name is ", "i am ", "i'm ", "nama saya ", "saya "]:
+                        if pattern in prompt_lower:
+                            # Extract what comes after the pattern
+                            idx = prompt_lower.find(pattern) + len(pattern)
+                            name = prompt[idx:].strip().split()[0].capitalize() if idx < len(prompt) else ""
+                            break
+                    
+                    if name:
+                        full_response = (
+                            f"Hello {name}! Nice to meet you! 👋\n\n"
+                            "I'm your financial literacy assistant. I can help you learn about:\n"
+                            "- 💰 **Budgeting** (50/30/20 rule)\n"
+                            "- 🏦 **Saving money** and emergency funds\n"
+                            "- 📈 **EPF/KWSP** retirement planning\n"
+                            "- 💳 **Managing debt** and credit cards\n"
+                            "- 🛡️ **Insurance** and financial protection\n\n"
+                            "What would you like to learn about today?"
+                        )
+                    else:
+                        full_response = (
+                            "Hello! 👋 Welcome to the Financial Literacy Chatbot!\n\n"
+                            "I'm here to help you learn about:\n"
+                            "- 💰 **Budgeting** and spending wisely\n"
+                            "- 🏦 **Saving money** tips\n"
+                            "- 📈 **EPF/KWSP** and retirement\n"
+                            "- 💳 **Debt management**\n\n"
+                            "How can I assist you today?"
+                        )
                     retrieved_count = 0
                     sources = []
                     # (hidden) do not display model/RAG debug info to users
@@ -1191,18 +1393,27 @@ def show_chatbot_page():
                     stop_animation.set()
                     animation_thread.join()
                 
-                # Stream the response (skip if we already handled a short-circuit greeting)
+                # Handle both streaming and non-streaming responses
                 if not short_circuit:
-                    try:
-                        retrieved_count = len(sources) if sources is not None else 0
-                    except Exception:
+                    # Check if it's a direct string response (out-of-scope)
+                    if isinstance(response_stream, str):
+                        full_response = response_stream
                         retrieved_count = 0
+                        message_placeholder.markdown(full_response)
+                    else:
+                        # It's a stream, process token by token
+                        try:
+                            retrieved_count = len(sources) if sources is not None else 0
+                        except Exception:
+                            retrieved_count = 0
 
-                    for chunk in response_stream:
-                        full_response += chunk
-                        message_placeholder.markdown(full_response + "▌")
-                    
-                    message_placeholder.markdown(full_response)
+                        # Stream response
+                        for chunk in response_stream:
+                            if chunk:
+                                full_response += chunk
+                                message_placeholder.markdown(full_response + "▌")
+                        
+                        message_placeholder.markdown(full_response)
                 
                 # Feedback buttons with cus
                 # tom styling to prevent text wrapping

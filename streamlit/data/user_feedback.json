@@ -142,6 +142,39 @@
       "answer": "N/A",
       "sources_count": 0,
       "model_used": "llama3.2"
+    },
+    {
+      "user_id": "20260128_224756",
+      "timestamp": "2026-01-28T23:00:40.134730",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'its good', 'useful_topics': ['Budgeting'], 'model_used': 'my-finetuned'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260204_124803",
+      "timestamp": "2026-02-04T13:11:40.240240",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Extremely helpful', 'ease_of_use': 'Easy', 'feedback_text': 'a', 'useful_topics': [], 'model_used': 'my-finetuned'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "my-finetuned"
+    },
+    {
+      "user_id": "20260204_131254",
+      "timestamp": "2026-02-04T14:06:39.909185",
+      "feedback_type": "general",
+      "feedback_text": "{'overall_rating': '⭐ Excellent', 'helpfulness': 'Helpful', 'ease_of_use': 'Very easy', 'feedback_text': 'all good', 'useful_topics': [], 'model_used': 'my-finetuned'}",
+      "rating": "excellent",
+      "question": "General Feedback",
+      "answer": "N/A",
+      "sources_count": 0,
+      "model_used": "my-finetuned"
     }
   ]
 }
