@@ -1,4 +1,4 @@
-"""
+﻿"""
 Standalone Admin Results Viewer - FIXED VERSION
 Run this from the streamlit folder: python admin_results_viewer.py
 """
@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime
 import os
 
-# FIXED: Simple path resolution
+# Resolve the data path from the current script location.
 # If running from project root, data is in streamlit/data/
 # If running from streamlit folder, data is in data/
 if os.path.exists("data/test_results.json"):
@@ -26,9 +26,9 @@ def view_test_results():
         
         # Check if file exists
         if not os.path.exists(filepath):
-            print(f"❌ Error: File not found at {os.path.abspath(filepath)}")
-            print(f"💡 Looking in: {os.path.abspath(DATA_PATH)}")
-            print(f"💡 Files available: {os.listdir(DATA_PATH) if os.path.exists(DATA_PATH) else 'Directory not found'}")
+            print(f"鉂?Error: File not found at {os.path.abspath(filepath)}")
+            print(f"馃挕 Looking in: {os.path.abspath(DATA_PATH)}")
+            print(f"馃挕 Files available: {os.listdir(DATA_PATH) if os.path.exists(DATA_PATH) else 'Directory not found'}")
             return
             
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -41,7 +41,7 @@ def view_test_results():
             return
         
         print("="*80)
-        print("📊 TEST RESULTS SUMMARY")
+        print("馃搳 TEST RESULTS SUMMARY")
         print("="*80)
         
         # Group by user
@@ -97,7 +97,7 @@ def view_test_results():
             
             if tests["info"]:
                 info = tests["info"]
-                print(f"\n📋 Participant Information:")
+                print(f"\n馃搵 Participant Information:")
                 print(f"   Age: {info.get('age')}")
                 print(f"   Gender: {info.get('gender')}")
                 print(f"   Education: {info.get('education')}")
@@ -106,7 +106,7 @@ def view_test_results():
             for test_type in ["pre", "post"]:
                 if tests[test_type]:
                     result = tests[test_type]
-                    print(f"\n{'📝 PRE-TEST' if test_type == 'pre' else '📋 POST-TEST'} RESULTS:")
+                    print(f"\n{'馃摑 PRE-TEST' if test_type == 'pre' else '馃搵 POST-TEST'} RESULTS:")
                     print(f"   Timestamp: {result['timestamp']}")
                     
                     print(f"\n   Scores by Category:")
@@ -122,22 +122,22 @@ def view_test_results():
         # Export to CSV
         export_path = os.path.join(DATA_PATH, "test_results_summary.csv")
         df.to_csv(export_path, index=False)
-        print(f"\n✅ Summary exported to: {os.path.abspath(export_path)}")
+        print(f"\n鉁?Summary exported to: {os.path.abspath(export_path)}")
         
     except FileNotFoundError:
-        print(f"❌ Error: test_results.json file not found at {os.path.abspath(filepath)}!")
-        print("💡 Tip: Run the Streamlit app first and complete a test to generate data.")
+        print(f"鉂?Error: test_results.json file not found at {os.path.abspath(filepath)}!")
+        print("馃挕 Tip: Run the Streamlit app first and complete a test to generate data.")
     except json.JSONDecodeError:
-        print(f"❌ Error: Invalid JSON in test_results.json")
+        print(f"鉂?Error: Invalid JSON in test_results.json")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"鉂?Error: {e}")
         import traceback
         traceback.print_exc()
 
 def view_feedback():
     """Display all user feedback"""
     try:
-        # FIXED: Check both possible locations
+        # Check both possible locations.
         feedback_paths = [
             os.path.join(DATA_PATH, "user_feedback.json"),
             "user_feedback.json",
@@ -151,8 +151,8 @@ def view_feedback():
                 break
         
         if not feedback_file:
-            print(f"❌ Error: user_feedback.json not found!")
-            print(f"💡 Searched in:")
+            print(f"鉂?Error: user_feedback.json not found!")
+            print(f"馃挕 Searched in:")
             for path in feedback_paths:
                 print(f"   - {os.path.abspath(path)}")
             return
@@ -167,15 +167,15 @@ def view_feedback():
             return
         
         print("\n" + "="*80)
-        print("💬 USER FEEDBACK")
+        print("馃挰 USER FEEDBACK")
         print("="*80)
         
         helpful = [f for f in feedbacks if f["rating"] == "helpful"]
         not_helpful = [f for f in feedbacks if f["rating"] == "not_helpful"]
         
         print(f"\nTotal Feedback: {len(feedbacks)}")
-        print(f"👍 Helpful: {len(helpful)} ({len(helpful)/len(feedbacks)*100:.1f}%)")
-        print(f"👎 Not Helpful: {len(not_helpful)} ({len(not_helpful)/len(feedbacks)*100:.1f}%)")
+        print(f"馃憤 Helpful: {len(helpful)} ({len(helpful)/len(feedbacks)*100:.1f}%)")
+        print(f"馃憥 Not Helpful: {len(not_helpful)} ({len(not_helpful)/len(feedbacks)*100:.1f}%)")
         
         print("\n" + "="*80)
         print("DETAILED FEEDBACK")
@@ -206,15 +206,15 @@ def view_feedback():
         df = pd.DataFrame(feedback_data)
         export_path = os.path.join(DATA_PATH, "feedback_summary.csv")
         df.to_csv(export_path, index=False)
-        print(f"\n✅ Feedback exported to: {os.path.abspath(export_path)}")
+        print(f"\n鉁?Feedback exported to: {os.path.abspath(export_path)}")
         
     except FileNotFoundError:
-        print("❌ Error: user_feedback.json file not found!")
-        print("💡 Tip: Run the Streamlit app and provide feedback to generate data.")
+        print("鉂?Error: user_feedback.json file not found!")
+        print("馃挕 Tip: Run the Streamlit app and provide feedback to generate data.")
     except json.JSONDecodeError:
-        print(f"❌ Error: Invalid JSON in user_feedback.json")
+        print(f"鉂?Error: Invalid JSON in user_feedback.json")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"鉂?Error: {e}")
         import traceback
         traceback.print_exc()
 
@@ -224,7 +224,7 @@ def calculate_statistics():
         filepath = os.path.join(DATA_PATH, "test_results.json")
         
         if not os.path.exists(filepath):
-            print(f"❌ Error: File not found at {os.path.abspath(filepath)}")
+            print(f"鉂?Error: File not found at {os.path.abspath(filepath)}")
             return
             
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -237,7 +237,7 @@ def calculate_statistics():
             return
         
         print("\n" + "="*80)
-        print("📈 STATISTICS & ANALYTICS")
+        print("馃搱 STATISTICS & ANALYTICS")
         print("="*80)
         
         # Group by user for improvement calculation
@@ -261,7 +261,7 @@ def calculate_statistics():
                 })
         
         if improvements:
-            print(f"\n✅ Users with Complete Tests: {len(improvements)}")
+            print(f"\n鉁?Users with Complete Tests: {len(improvements)}")
             
             avg_pre = sum(i["pre"] for i in improvements) / len(improvements)
             avg_post = sum(i["post"] for i in improvements) / len(improvements)
@@ -275,7 +275,7 @@ def calculate_statistics():
             declined = sum(1 for i in improvements if i["improvement"] < 0)
             same = sum(1 for i in improvements if i["improvement"] == 0)
             
-            print(f"\n📊 Improvement Distribution:")
+            print(f"\n馃搳 Improvement Distribution:")
             print(f"   Improved: {improved} ({improved/len(improvements)*100:.1f}%)")
             print(f"   Declined: {declined} ({declined/len(improvements)*100:.1f}%)")
             print(f"   No Change: {same} ({same/len(improvements)*100:.1f}%)")
@@ -283,19 +283,19 @@ def calculate_statistics():
             # Best and worst performers
             improvements_sorted = sorted(improvements, key=lambda x: x["improvement"], reverse=True)
             
-            print(f"\n🏆 Top 3 Improvements:")
+            print(f"\n馃弳 Top 3 Improvements:")
             for i, imp in enumerate(improvements_sorted[:3], 1):
-                print(f"   {i}. User {imp['user_id'][-8:]}: {imp['pre']:.1f}% → {imp['post']:.1f}% ({imp['improvement']:+.1f}%)")
+                print(f"   {i}. User {imp['user_id'][-8:]}: {imp['pre']:.1f}% 鈫?{imp['post']:.1f}% ({imp['improvement']:+.1f}%)")
             
             if len(improvements_sorted) >= 3:
-                print(f"\n⚠️  Bottom 3 Improvements:")
+                print(f"\n鈿狅笍  Bottom 3 Improvements:")
                 for i, imp in enumerate(improvements_sorted[-3:], 1):
-                    print(f"   {i}. User {imp['user_id'][-8:]}: {imp['pre']:.1f}% → {imp['post']:.1f}% ({imp['improvement']:+.1f}%)")
+                    print(f"   {i}. User {imp['user_id'][-8:]}: {imp['pre']:.1f}% 鈫?{imp['post']:.1f}% ({imp['improvement']:+.1f}%)")
         else:
-            print("\n⚠️  No complete pre/post test pairs available yet.")
+            print("\n鈿狅笍  No complete pre/post test pairs available yet.")
         
         # Category breakdown
-        print(f"\n📊 Category Performance:")
+        print(f"\n馃搳 Category Performance:")
         categories = ["Financial Knowledge", "Financial Behavior", "Financial Confidence", "Financial Attitudes"]
         
         for category in categories:
@@ -314,32 +314,32 @@ def calculate_statistics():
                 print(f"   {category:25} : {avg:+6.1f}%")
         
     except FileNotFoundError:
-        print("❌ Error: test_results.json file not found!")
-        print("💡 Tip: Complete both pre-test and post-test to see statistics.")
+        print("鉂?Error: test_results.json file not found!")
+        print("馃挕 Tip: Complete both pre-test and post-test to see statistics.")
     except json.JSONDecodeError:
-        print(f"❌ Error: Invalid JSON in test_results.json")
+        print(f"鉂?Error: Invalid JSON in test_results.json")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"鉂?Error: {e}")
         import traceback
         traceback.print_exc()
 
 def main():
     """Main menu"""
     print("\n" + "="*80)
-    print("👨‍💼 ADMIN RESULTS VIEWER")
+    print("馃懆鈥嶐煉?ADMIN RESULTS VIEWER")
     print("="*80)
-    print(f"📁 Data directory: {os.path.abspath(DATA_PATH)}")
+    print(f"馃搧 Data directory: {os.path.abspath(DATA_PATH)}")
     
     # Check if data directory exists
     if not os.path.exists(DATA_PATH):
-        print(f"\n❌ Warning: Data directory not found!")
+        print(f"\n鉂?Warning: Data directory not found!")
         print(f"   Expected: {os.path.abspath(DATA_PATH)}")
         print(f"   Current working directory: {os.getcwd()}")
-        print(f"\n💡 Make sure you're running this from the correct location.")
+        print(f"\n馃挕 Make sure you're running this from the correct location.")
         return
     
     while True:
-        print("\n📋 Menu:")
+        print("\n馃搵 Menu:")
         print("1. View Test Results")
         print("2. View User Feedback")
         print("3. View Statistics & Analytics")
@@ -359,16 +359,16 @@ def main():
             view_feedback()
             calculate_statistics()
         elif choice == "5":
-            print("\n👋 Goodbye!")
+            print("\n馃憢 Goodbye!")
             break
         else:
-            print("❌ Invalid option. Please try again.")
+            print("鉂?Invalid option. Please try again.")
 
 if __name__ == "__main__":
     try:
         import pandas as pd
     except ImportError:
-        print("⚠️  pandas not installed. Installing...")
+        print("鈿狅笍  pandas not installed. Installing...")
         import subprocess
         subprocess.check_call(["pip", "install", "pandas"])
         import pandas as pd

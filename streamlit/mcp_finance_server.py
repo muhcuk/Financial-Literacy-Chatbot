@@ -10,12 +10,12 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 import os
 
-# --- Configuration ---
+# Server configuration
 PERSIST_DIR = "../finance_db"
 COLLECTION_NAME = "finance_knowledge"
 EMB_MODEL = "intfloat/multilingual-e5-small"
 
-# Initialize MCP Server
+# Create the MCP server
 mcp = FastMCP("Financial Literacy Knowledge Base")
 
 # Global database instance
@@ -38,9 +38,7 @@ def get_database():
     return _db
 
 
-# =============================================================================
-# MCP TOOLS - Structured access to knowledge base
-# =============================================================================
+# Tools for structured knowledge-base access
 
 @mcp.tool()
 def search_financial_knowledge(query: str, max_results: int = 3) -> dict:
@@ -338,9 +336,7 @@ def check_debt_ratio(monthly_income: float, total_monthly_debt_payments: float) 
     }
 
 
-# =============================================================================
-# MCP RESOURCES - Static information
-# =============================================================================
+# Static MCP resources
 
 @mcp.resource("finance://malaysian-context")
 def get_malaysian_context() -> str:
@@ -357,9 +353,7 @@ def get_malaysian_context() -> str:
     """
 
 
-# =============================================================================
-# Run server
-# =============================================================================
+# Start the server
 
 if __name__ == "__main__":
     print("Starting Financial Literacy MCP Server...")

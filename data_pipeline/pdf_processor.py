@@ -190,9 +190,9 @@ def main():
     for pdf_path in tqdm(pdf_paths, desc="Processing PDFs"):
         try:
             out_path = process_pdf(pdf_path, args.output_dir, args.chunk_size, args.chunk_overlap, args.ocr_threshold, extract_images)
-            print(f"✅ Processed {os.path.basename(pdf_path)} -> {out_path}")
+            print(f"Processed {os.path.basename(pdf_path)} -> {out_path}")
         except Exception as e:
-            print(f"❌ Failed to process {os.path.basename(pdf_path)}: {e}")
+            print(f"Failed to process {os.path.basename(pdf_path)}: {e}")
 
 if __name__ == "__main__":
     main()

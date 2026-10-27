@@ -1,6 +1,6 @@
 # Financial Literacy Chatbot
 
-An AI-powered chatbot designed to improve financial literacy among Malaysian youth through Retrieval-Augmented Generation (RAG) with interactive pre/post assessments based on PISA Financial Literacy Framework.
+A chatbot designed to support financial literacy learning among Malaysian youth through Retrieval-Augmented Generation (RAG) with interactive pre/post assessments based on the PISA Financial Literacy Framework.
 
 ## Features
 

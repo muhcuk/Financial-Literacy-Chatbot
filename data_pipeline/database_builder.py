@@ -1,9 +1,3 @@
-# --- FIX: This patch must be at the very top of the file ---
-#__import__('pysqlite3')
-#import sys
-#sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-# --------------------------------------------------------
-
 import os
 import json
 import argparse
@@ -12,11 +6,9 @@ from glob import glob
 from typing import List, Dict, Any
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
-# LangChain import updated for v0.2+/v0.3+ compatibility
 try:
     from langchain_core.documents import Document
 except Exception:
-    # Fallback for older LangChain versions
     from langchain.docstore.document import Document
 from tqdm import tqdm
 from dotenv import load_dotenv
@@ -37,17 +29,13 @@ def load_and_prepare_docs(glob_path: str) -> List[Document]:
                     text = data.get("text")
                     if not text: continue
       
-                    # Build safe, flat metadata acceptable to Chroma
                     h = hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
                     raw_meta: Dict[str, Any] = data.copy()
-                    # Flatten nested 'metadata' dict if present
                     if isinstance(raw_meta.get("metadata"), dict):
                         nested = raw_meta.pop("metadata")
                         for k, v in nested.items():
                             raw_meta[k] = v
-                    # Remove content field itself
                     raw_meta.pop("text", None)
-                    # Ensure only primitive types in metadata
                     safe_meta: Dict[str, Any] = {}
                     for k, v in raw_meta.items():
                         if isinstance(v, (str, int, float, bool)) or v is None:
@@ -66,7 +54,6 @@ def load_and_prepare_docs(glob_path: str) -> List[Document]:
 def main():
     parser = argparse.ArgumentParser(description="Build ChromaDB from cleaned JSONL data.")
     parser.add_argument("--input_glob", default="data_improved_chunks/*.jsonl")
-    # PATH FIXED: Saves the DB to the local 'finance_db' folder
     parser.add_argument("--persist_dir", default="finance_db") 
     parser.add_argument("--collection", default="finance_knowledge")
     parser.add_argument("--model_name", default="intfloat/multilingual-e5-small")
@@ -79,7 +66,7 @@ def main():
         if not docs:
             print("No valid documents found.")
             return
-        print(f"📚 Loaded {len(docs)} document chunks.")
+        print(f"Loaded {len(docs)} document chunks.")
     except FileNotFoundError as e:
         print(f"Error: {e}. Run processing scripts first.")
         return
@@ -88,20 +75,20 @@ def main():
     db = Chroma(collection_name=args.collection, embedding_function=embeddings, persist_directory=args.persist_dir)
 
     if args.reset:
-        print(f"🗑️ Resetting collection: {args.collection}")
+        print(f"Resetting collection: {args.collection}")
         db.delete_collection()
         db = Chroma.from_documents(docs, embeddings, collection_name=args.collection, persist_directory=args.persist_dir)
-        print(f"✅ Created new collection with {len(docs)} documents.")
+        print(f"Created new collection with {len(docs)} documents.")
     else:
         existing_hashes = {meta["content_hash"] for meta in db.get(include=["metadatas"]).get("metadatas", []) if meta and "content_hash" in meta}
         new_docs = [doc for doc in docs if doc.metadata.get("content_hash") not in existing_hashes]
         if not new_docs:
-            print("✅ No new documents to add.")
+            print("No new documents to add.")
             return
-        print(f"➕ Found {len(new_docs)} new documents to add.")
+        print(f"Found {len(new_docs)} new documents to add.")
         db.add_documents(new_docs)
-        print(f"✅ Added {len(new_docs)} new documents.")
-    print("\n🎉 Ingestion complete.")
+        print(f"Added {len(new_docs)} new documents.")
+    print("\nIngestion complete.")
 
 if __name__ == "__main__":
     main()

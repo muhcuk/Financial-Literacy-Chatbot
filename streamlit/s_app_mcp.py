@@ -18,19 +18,19 @@ import time
 import threading
 from functools import lru_cache
 
-# --- Configuration ---
+# Application settings
 PERSIST_DIR = "../finance_db"
 COLLECTION_NAME = "finance_knowledge"
 EMB_MODEL = "intfloat/multilingual-e5-small"
 
-# --- Page Configuration ---
+# Page configuration
 st.set_page_config(
     page_title="Financial Literacy Chatbot (MCP)",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-# --- Custom CSS ---
+# Custom styles
 st.markdown("""
 <style>
     .main-header {
@@ -68,7 +68,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- Initialize Session State ---
+# Session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "current_page" not in st.session_state:
@@ -84,9 +84,8 @@ if "selected_model" not in st.session_state:
 if "resources_loaded" not in st.session_state:
     st.session_state.resources_loaded = False
 
-# --- Reset Session Function ---
 def reset_session():
-    """Reset all session state for new user"""
+    """Reset session state for a new user."""
     st.session_state.messages = []
     st.session_state.current_page = "welcome"
     st.session_state.pre_test_completed = False
@@ -101,7 +100,7 @@ def reset_session():
     if "participant_info" in st.session_state:
         del st.session_state.participant_info
 
-# --- PISA Questions (same as original) ---
+# PISA assessment questions
 PISA_QUESTIONS = {
     "Financial Knowledge": [
         {"id": "FL164Q01", "question": "Have you heard of or learnt about: Interest payment", "options": ["Never heard of it", "Heard of it, but don't recall meaning", "Know what it means"], "weight": 1},
@@ -122,7 +121,7 @@ PISA_QUESTIONS = {
     ]
 }
 
-# --- Load Resources ---
+# Resource loading
 @st.cache_resource(show_spinner=False)
 def load_embeddings():
     return HuggingFaceEmbeddings(model_name=EMB_MODEL)
@@ -142,7 +141,7 @@ def load_database(_embeddings):
 def load_llm(_model_name):
     return Ollama(
         model=_model_name,
-        temperature=0.3,  # Lower temperature for more factual responses
+        temperature=0.3,
         num_predict=450,
         top_k=30,
         top_p=0.85,
@@ -233,9 +232,7 @@ def calculate_scores(responses):
     return category_scores
 
 
-# =============================================================================
-# MCP-STYLE TOOLS - Structured Knowledge Access (Replaces free-form RAG)
-# =============================================================================
+# MCP tools for structured knowledge access
 
 def mcp_search_knowledge(query: str, db, max_results: int = 3) -> dict:
     """
@@ -450,12 +447,11 @@ VERIFIED FACTS FROM KNOWLEDGE BASE:
     else:
         knowledge_section = ""
         no_info_instruction = """
-⚠️ NO RELEVANT INFORMATION FOUND IN KNOWLEDGE BASE.
-You MUST respond with: "I don't have specific information about this topic in my knowledge base. 
+No relevant information was found in the knowledge base.
+Respond with: "I don't have specific information about this topic in my knowledge base.
 Please try asking about budgeting, saving, debt management, investment, insurance, tax, or retirement planning in Malaysia."
 """
     
-    # The key: Prompt that FORCES use of provided data only
     prompt = f"""You are a financial literacy assistant. You must ONLY use the verified information provided below.
 
 STRICT RULES:
@@ -495,24 +491,21 @@ def is_greeting(text: str) -> bool:
     return False
 
 
-# =============================================================================
-# UI PAGES
-# =============================================================================
-
+# UI pages
 def show_welcome_page():
     st.markdown('<p class="main-header">Financial Literacy Chatbot</p>', unsafe_allow_html=True)
-    st.markdown('<span class="mcp-badge">MCP Mode - Reduced Hallucination</span>', unsafe_allow_html=True)
+    st.markdown('<span class="mcp-badge">MCP Mode - Source-based responses</span>', unsafe_allow_html=True)
     
     st.markdown("""
     ### Welcome
     
     This is the **MCP (Model Context Protocol) version** of the chatbot.
     
-    #### What's different in MCP Mode?
-    - **Structured responses**: The AI only presents verified facts from the knowledge base
-    - **Exact calculations**: Financial calculations use precise formulas (no guessing)
-    - **Source citations**: Every fact is linked to its source
-    - **Honest uncertainty**: If information isn't available, the chatbot will tell you
+    #### What is different in MCP Mode?
+    - **Structured responses**: Answers use facts from the knowledge base
+    - **Calculations**: Financial calculations use the configured formulas
+    - **Source citations**: Responses include their source records
+    - **Uncertainty**: The chatbot says when the knowledge base has no answer
     
     #### How it works:
     1. **Pre-Test** - Complete a short quiz to assess your current financial knowledge
@@ -521,7 +514,7 @@ def show_welcome_page():
     
     ---
     
-    **Ready to start?** Click the button below!
+    Start when you are ready.
     """)
     
     col1, col2, col3 = st.columns([1, 1, 1])
@@ -589,7 +582,6 @@ def show_pisa_test(test_type="pre"):
                 st.session_state.current_page = "results"
             
             st.success("Assessment submitted.")
-            st.balloons()
             st.rerun()
 
 
@@ -610,15 +602,14 @@ def show_chatbot_page():
     try:
         db, llm = load_resources(st.session_state.selected_model)
     except Exception as e:
-        st.error(f"❌ Error loading model: {str(e)}")
+        st.error(f"Error loading model: {str(e)}")
         return
     
-    # Display chat history
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
             if message["role"] == "assistant" and "sources" in message and message["sources"]:
-                with st.expander(f"📚 View Sources ({len(message['sources'])} verified)"):
+                with st.expander(f"View sources ({len(message['sources'])} verified)"):
                     for i, source in enumerate(message["sources"], 1):
                         metadata = source.get("metadata", {})
                         title = metadata.get("title", metadata.get("source", "Unknown Source"))
@@ -626,7 +617,6 @@ def show_chatbot_page():
                         st.caption(source["content"][:200] + "...")
                         st.divider()
     
-    # Chat input
     if prompt := st.chat_input("Ask about financial literacy (responses from verified sources only)..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
@@ -643,7 +633,7 @@ def show_chatbot_page():
                 dots = ["", ".", "..", "..."]
                 idx = 0
                 while not stop_event.is_set():
-                    placeholder.markdown(f"🔍 Searching verified knowledge base{dots[idx]}")
+                    placeholder.markdown(f"Searching verified knowledge base{dots[idx]}")
                     idx = (idx + 1) % len(dots)
                     time.sleep(0.5)
                 placeholder.empty()
@@ -651,16 +641,16 @@ def show_chatbot_page():
             try:
                 if is_greeting(prompt):
                     full_response = (
-                        "Hello! 👋 I'm the MCP-powered financial literacy chatbot.\n\n"
+                        "Hello. This chatbot answers using source records from its knowledge base.\n\n"
                         "In this mode, I only provide **verified information** from my knowledge base. "
                         "Ask me about:\n"
-                        "- 💰 Budgeting (50/30/20 rule)\n"
-                        "- 🏦 Saving tips\n"
-                        "- 💳 Debt management\n"
-                        "- 📈 Investment basics\n"
-                        "- 🏥 Insurance\n"
-                        "- 🧾 Tax filing (LHDN)\n"
-                        "- 👴 Retirement (EPF/KWSP)\n\n"
+                        "- Budgeting (50/30/20 rule)\n"
+                        "- Saving tips\n"
+                        "- Debt management\n"
+                        "- Investment basics\n"
+                        "- Insurance\n"
+                        "- Tax filing (LHDN)\n"
+                        "- Retirement (EPF/KWSP)\n\n"
                         "How can I help you today?"
                     )
                     sources = []
@@ -672,7 +662,6 @@ def show_chatbot_page():
                         "mode": "MCP"
                     })
                 else:
-                    # Start animation
                     animation_thread = threading.Thread(target=animate_thinking, args=(thinking_placeholder, stop_animation))
                     animation_thread.start()
                     
@@ -692,9 +681,9 @@ def show_chatbot_page():
                     
                     # Show verification status
                     if found_count > 0:
-                        st.success(f"✅ Response based on {found_count} verified source(s)")
+                        st.success(f"Response based on {found_count} verified source(s)")
                     else:
-                        st.warning("⚠️ Limited information available for this query")
+                        st.warning("Limited information available for this query")
                     
                     if calc_result:
                         st.info("🧮 Includes exact calculation results")
@@ -706,13 +695,13 @@ def show_chatbot_page():
                             save_feedback(prompt, full_response, "helpful", sources)
                             st.success("Thanks!")
                     with col2:
-                        if st.button("👎 Not Helpful", key=f"not_helpful_{len(st.session_state.messages)}"):
+                        if st.button("Not helpful", key=f"not_helpful_{len(st.session_state.messages)}"):
                             save_feedback(prompt, full_response, "not_helpful", sources)
                             st.warning("We'll improve!")
                     
                     # Show sources
                     if sources:
-                        with st.expander(f"📚 View Sources ({len(sources)} verified)"):
+                        with st.expander(f"View sources ({len(sources)} verified)"):
                             for i, source in enumerate(sources, 1):
                                 metadata = source.get("metadata", {})
                                 title = metadata.get("title", metadata.get("source", "Unknown Source"))
@@ -732,7 +721,7 @@ def show_chatbot_page():
                 stop_animation.set()
                 if 'animation_thread' in locals():
                     animation_thread.join()
-                error_msg = f"❌ Error: {str(e)}"
+                error_msg = f"Error: {str(e)}"
                 message_placeholder.markdown(error_msg)
 
 
@@ -791,9 +780,7 @@ def show_results_page():
             st.rerun()
 
 
-# =============================================================================
-# MAIN
-# =============================================================================
+# Main navigation
 
 def main():
     # Sidebar

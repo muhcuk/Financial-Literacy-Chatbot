@@ -236,7 +236,7 @@ def scrape_sites_to_pdf():
             try:
                 driver.get(url)
             except Exception as e:
-                print(f"  ❌ Failed to load URL {url}: {e}")
+                print(f"Failed to load URL {url}: {e}")
                 continue
  
             # Keep 15s wait for Cloudflare to resolve

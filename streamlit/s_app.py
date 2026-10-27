@@ -11,20 +11,20 @@ import time
 import threading
 from functools import lru_cache
 
-# --- Configuration ---
+# Application settings
 PERSIST_DIR = "../finance_db"
 COLLECTION_NAME = "finance_knowledge"
 EMB_MODEL = "intfloat/multilingual-e5-small"
-# Note: LLM_MODEL is now dynamic based on user selection
+# The model is selected in the sidebar.
 
-# --- Page Configuration ---
+# Page configuration
 st.set_page_config(
     page_title="Financial Literacy Chatbot",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-# --- Custom CSS ---
+# Custom styles
 st.markdown("""
 <style>
     .main-header {
@@ -65,7 +65,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- Initialize Session State ---
+# Session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "current_page" not in st.session_state:
@@ -77,22 +77,19 @@ if "post_test_completed" not in st.session_state:
 if "user_id" not in st.session_state:
     st.session_state.user_id = datetime.now().strftime("%Y%m%d_%H%M%S")
 if "selected_model" not in st.session_state:
-    st.session_state.selected_model = "my-finetuned"  # Default model
+    st.session_state.selected_model = "my-finetuned"
 if "resources_loaded" not in st.session_state:
     st.session_state.resources_loaded = False
 
-# --- Reset Session Function ---
 def reset_session():
-    """Reset all session state for new user"""
+    """Reset session state for a new user."""
     st.session_state.messages = []
     st.session_state.current_page = "welcome"
     st.session_state.pre_test_completed = False
     st.session_state.post_test_completed = False
     st.session_state.user_id = datetime.now().strftime("%Y%m%d_%H%M%S")
-    # Reset to fixed defaults
     st.session_state.selected_model = "my-finetuned"
     st.session_state.rag_mode = "Strict"
-    # Keep resources_loaded = True so we don't reload
     if "pre_test_scores" in st.session_state:
         del st.session_state.pre_test_scores
     if "post_test_scores" in st.session_state:
@@ -100,7 +97,7 @@ def reset_session():
     if "participant_info" in st.session_state:
         del st.session_state.participant_info
 
-# --- PISA Questions ---
+# PISA assessment questions
 PISA_QUESTIONS = {
     "Financial Knowledge": [
         {
@@ -166,38 +163,35 @@ PISA_QUESTIONS = {
     ]
 }
 
-# --- Get Available Models ---
 def get_available_models():
-    """Get list of available models from Ollama"""
+    """Return the models currently available through Ollama."""
     try:
         result = subprocess.run(['ollama', 'list'], capture_output=True, text=True, timeout=5)
         available_models = []
         
-        for line in result.stdout.split('\n')[1:]:  # Skip header
+        for line in result.stdout.split('\n')[1:]:
             if line.strip():
                 model_name = line.split()[0]
-                if model_name and ':' not in model_name:  # Filter out tags
+                if model_name and ':' not in model_name:
                     available_models.append(model_name)
         
-        # Remove duplicates and sort
         available_models = sorted(list(set(available_models)))
         
         if not available_models:
             available_models = ["llama3.2", "my-finetuned"]
         
         return available_models
-    except:
+    except (OSError, subprocess.SubprocessError):
         return ["llama3.2", "my-finetuned"]
 
-# --- Load Resources (Optimized with separate caching) ---
 @st.cache_resource(show_spinner=False)
 def load_embeddings():
-    """Load embeddings model - cached separately since it never changes"""
+    """Load and cache the embeddings model."""
     return HuggingFaceEmbeddings(model_name=EMB_MODEL)
 
 @st.cache_resource(show_spinner=False)
 def load_database(_embeddings):
-    """Load Chroma database - cached separately"""
+    """Load and cache the Chroma database."""
     if not os.path.exists(PERSIST_DIR):
         st.error(f"Database not found at {PERSIST_DIR}")
         st.stop()
@@ -209,14 +203,14 @@ def load_database(_embeddings):
 
 @st.cache_resource(show_spinner=False)
 def load_llm(_model_name):
-    """Load LLM - cached by model name"""
+    """Load and cache an LLM by model name."""
     return Ollama(
         model=_model_name,
         temperature=0.7,
-        num_predict=450,  # Allow complete multi-point responses
+        num_predict=450,
         top_k=35,
         top_p=0.9,
-        repeat_penalty=1.15  # Prevent repetition
+        repeat_penalty=1.15
     )
 
 def load_resources(model_name):
@@ -286,7 +280,7 @@ Would you like to learn about **investment principles** or **how to evaluate sto
     # Return empty sources list
     return response, []
 
-# --- Data Storage Functions ---
+# Data storage
 def save_test_results(test_type, participant_info, responses, scores):
     """Save test results to JSON file"""
     filename = "data/test_results.json"
@@ -317,10 +311,10 @@ def save_test_results(test_type, participant_info, responses, scores):
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(all_data, f, indent=2, ensure_ascii=False)
         
-        print(f"✅ Saved {test_type} test for user {st.session_state.user_id}")
+        print(f"Saved {test_type} test for user {st.session_state.user_id}")
     except Exception as e:
         st.error(f"Error saving test results: {e}")
-        print(f"❌ Failed to save {test_type} test: {e}")
+        print(f"Failed to save {test_type} test: {e}")
 
 def save_feedback(question, answer, rating, sources):
     """Save user feedback"""
@@ -353,10 +347,10 @@ def save_feedback(question, answer, rating, sources):
         with open(feedback_file, 'w', encoding='utf-8') as f:
             json.dump(feedback_data, f, indent=2, ensure_ascii=False)
         
-        print(f"✅ Saved feedback: {rating}")
+        print(f"Saved feedback: {rating}")
     except Exception as e:
         st.error(f"Error saving feedback: {e}")
-        print(f"❌ Failed to save feedback: {e}")
+        print(f"Failed to save feedback: {e}")
 
 def save_general_feedback(user_id, feedback_text, rating):
     """Save general user feedback about the chatbot experience"""
@@ -389,12 +383,12 @@ def save_general_feedback(user_id, feedback_text, rating):
         with open(feedback_file, 'w', encoding='utf-8') as f:
             json.dump(feedback_data, f, indent=2, ensure_ascii=False)
         
-        print(f"✅ Saved general feedback")
+        print("Saved general feedback")
     except Exception as e:
         st.error(f"Error saving general feedback: {e}")
-        print(f"❌ Failed to save feedback: {e}")
+        print(f"Failed to save feedback: {e}")
 
-# --- Score Calculation ---
+# Score calculation
 def calculate_scores(responses):
     """Calculate scores by category"""
     category_scores = {}
@@ -417,7 +411,7 @@ def calculate_scores(responses):
     
     return category_scores
 
-# --- RAG Functions ---
+# Retrieval-augmented generation
 def rewrite_query(query: str) -> str:
     """Expand query for better retrieval"""
     financial_keywords = {
@@ -636,7 +630,7 @@ Answer:"""
     return response_stream, sources
 
 
-# --- Article URL & Title Mapping ---
+# Article metadata
 ARTICLE_URLS = {
     "smart_budgeting_technique": {
         "title": "Smart Budgeting Technique",
@@ -1127,7 +1121,7 @@ def is_greeting(text: str) -> bool:
     
     return False
 
-# --- UI Pages ---
+# UI pages
 def show_welcome_page():
     """Welcome page"""
     st.markdown('<p class="main-header">Financial Literacy Chatbot</p>', unsafe_allow_html=True)
@@ -1135,7 +1129,7 @@ def show_welcome_page():
     st.markdown("""
     ### Welcome
     
-    This AI-powered chatbot helps you learn about financial literacy using information from 
+    This chatbot helps you learn about financial literacy using information from
     **Malaysian EPF (KWSP)** and financial education resources.
     
     #### How it works:
@@ -1266,7 +1260,7 @@ def show_chatbot_page():
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
             if message["role"] == "assistant" and "sources" in message:
-                with st.expander("📚 View Sources"):
+                with st.expander("View sources"):
                     for i, source in enumerate(message["sources"], 1):
                         metadata = source["metadata"]
                         # Get source from source_file (full path) or title
@@ -1346,28 +1340,26 @@ def show_chatbot_page():
                     
                     if name:
                         full_response = (
-                            f"Hello {name}! Nice to meet you! 👋\n\n"
-                            "I'm your financial literacy assistant. I can help you learn about:\n"
-                            "- 💰 **Budgeting** (50/30/20 rule)\n"
-                            "- 🏦 **Saving money** and emergency funds\n"
-                            "- 📈 **EPF/KWSP** retirement planning\n"
-                            "- 💳 **Managing debt** and credit cards\n"
-                            "- 🛡️ **Insurance** and financial protection\n\n"
+                            f"Hello {name}. I can help you learn about:\n\n"
+                            "- **Budgeting** (50/30/20 rule)\n"
+                            "- **Saving money** and emergency funds\n"
+                            "- **EPF/KWSP** retirement planning\n"
+                            "- **Managing debt** and credit cards\n"
+                            "- **Insurance** and financial protection\n\n"
                             "What would you like to learn about today?"
                         )
                     else:
                         full_response = (
-                            "Hello! 👋 Welcome to the Financial Literacy Chatbot!\n\n"
+                            "Hello. Welcome to the Financial Literacy Chatbot.\n\n"
                             "I'm here to help you learn about:\n"
-                            "- 💰 **Budgeting** and spending wisely\n"
-                            "- 🏦 **Saving money** tips\n"
-                            "- 📈 **EPF/KWSP** and retirement\n"
-                            "- 💳 **Debt management**\n\n"
-                            "How can I assist you today?"
+                            "- **Budgeting** and spending wisely\n"
+                            "- **Saving money** tips\n"
+                            "- **EPF/KWSP** and retirement\n"
+                            "- **Debt management**\n\n"
+                            "Ask a question to begin."
                         )
                     retrieved_count = 0
                     sources = []
-                    # (hidden) do not display model/RAG debug info to users
                     message_placeholder.markdown(full_response)
                     st.session_state.messages.append({
                         "role": "assistant",
@@ -1380,7 +1372,6 @@ def show_chatbot_page():
                     stop_animation.set()
                     short_circuit = True
                 else:
-                    # Start animation
                     animation_thread = threading.Thread(target=animate_thinking, args=(thinking_placeholder, stop_animation))
                     animation_thread.start()
 
@@ -1414,8 +1405,7 @@ def show_chatbot_page():
                         
                         message_placeholder.markdown(full_response)
                 
-                # Feedback buttons with cus
-                # tom styling to prevent text wrapping
+                # Keep feedback controls on one line at narrow widths.
                 st.markdown("""
                 <style>
                     div[data-testid="column"] button {
@@ -1428,15 +1418,15 @@ def show_chatbot_page():
                 
                 col1, col2, col3 = st.columns([1, 1, 4])
                 with col1:
-                    if st.button("👍 Helpful", key=f"helpful_{len(st.session_state.messages)}", use_container_width=False):
+                    if st.button("Helpful", key=f"helpful_{len(st.session_state.messages)}", use_container_width=False):
                         save_feedback(prompt, full_response, "helpful", sources)
                         st.success("Thanks!")
                 with col2:
-                    if st.button("👎 Not Helpful", key=f"not_helpful_{len(st.session_state.messages)}", use_container_width=False):
+                    if st.button("Not helpful", key=f"not_helpful_{len(st.session_state.messages)}", use_container_width=False):
                         save_feedback(prompt, full_response, "not_helpful", sources)
                         st.warning("We'll improve!")
                 
-                with st.expander("📚 View Sources"):
+                with st.expander("View sources"):
                     for i, source in enumerate(sources, 1):
                         metadata = source["metadata"]
                         # Get source from source_file (full path) or title
@@ -1769,7 +1759,7 @@ def show_admin_dashboard():
         except FileNotFoundError:
             st.error("No test results file found.")
 
-# --- Main App Navigation ---
+# Main navigation
 def main():
     """Main application"""
     
@@ -1836,7 +1826,7 @@ def main():
         - RAG (Retrieval-Augmented Generation)
         - KWSP/EPF Resources
         - PISA 2022 Framework
-        - Multiple AI Models
+        - Available language models
         """)
         
         st.divider()
@@ -1853,7 +1843,6 @@ def main():
             st.session_state.messages = []
             st.rerun()
     
-    # Main content area
     if st.session_state.current_page == "welcome":
         show_welcome_page()
     elif st.session_state.current_page == "pre_test":

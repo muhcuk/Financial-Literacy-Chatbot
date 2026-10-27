@@ -46,7 +46,7 @@ def main():
     if not files:
         print(f"No JSONL files found in {INPUT_DIR}. Run process_pdfs.py first.")
         return
-    print(f"🧾 Found {len(files)} JSONL files to clean.")
+    print(f"Found {len(files)} JSONL files to clean.")
     for file_path in tqdm(files, desc="Cleaning JSONL files"):
         filename = os.path.basename(file_path)
         output_path = os.path.join(OUTPUT_DIR, filename)
@@ -63,8 +63,8 @@ def main():
                     fout.write(json.dumps(obj, ensure_ascii=False) + "\n")
                     cleaned_count += 1
                 except json.JSONDecodeError: continue
-        print(f"✅ {filename}: Kept {cleaned_count} of {original_count} chunks.")
-    print("🎉 All files cleaned successfully.")
+        print(f"{filename}: kept {cleaned_count} of {original_count} chunks.")
+    print("All files cleaned successfully.")
 
 if __name__ == "__main__":
     main()

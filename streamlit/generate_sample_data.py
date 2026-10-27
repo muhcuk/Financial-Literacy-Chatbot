@@ -7,7 +7,7 @@ import random
 data_dir = "data"
 os.makedirs(data_dir, exist_ok=True)
 
-print(f"🎲 Generating sample data...")
+print("Generating sample data...")
 
 test_results = {"results": []}
 feedback_data = {"feedback": []}
@@ -26,7 +26,7 @@ for i in range(5):
         "occupation": random.choice(occupations)
     }
     
-    # Pre-test
+    # Generate a pre-test record.
     pre_scores = {
         "Financial Knowledge": random.uniform(40, 70),
         "Financial Behavior": random.uniform(40, 70),
@@ -47,7 +47,7 @@ for i in range(5):
         "scores": pre_scores
     })
     
-    # Post-test (with improvement)
+    # Generate a post-test record with a higher score.
     improvement = random.uniform(10, 25)
     post_scores = {key: min(100, value + improvement) for key, value in pre_scores.items()}
     
@@ -63,7 +63,7 @@ for i in range(5):
         "scores": post_scores
     })
     
-    # Feedback
+    # Generate a feedback record.
     feedback_data["feedback"].append({
         "user_id": user_id,
         "timestamp": (datetime.now() - timedelta(days=i, hours=1)).isoformat(),
@@ -73,13 +73,13 @@ for i in range(5):
         "sources_count": random.randint(3, 5)
     })
 
-# Save files
+# Save the generated records.
 with open(os.path.join(data_dir, "test_results.json"), 'w', encoding='utf-8') as f:
     json.dump(test_results, f, indent=2, ensure_ascii=False)
 
 with open(os.path.join(data_dir, "user_feedback.json"), 'w', encoding='utf-8') as f:
     json.dump(feedback_data, f, indent=2, ensure_ascii=False)
 
-print(f"✅ Generated {len(test_results['results'])} test results")
-print(f"✅ Generated {len(feedback_data['feedback'])} feedback entries")
-print(f"✅ Saved to: {os.path.abspath(data_dir)}/")
+print(f"Generated {len(test_results['results'])} test results")
+print(f"Generated {len(feedback_data['feedback'])} feedback entries")
+print(f"Saved to: {os.path.abspath(data_dir)}/")

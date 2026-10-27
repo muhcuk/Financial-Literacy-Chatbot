@@ -1,4 +1,4 @@
-"""
+﻿"""
 Model Conversion Using Pre-built llama.cpp Binaries
 Download pre-compiled tools instead of building from source
 
@@ -27,10 +27,10 @@ def download_prebuilt_binaries():
     
     # Check if already downloaded
     if os.path.exists("llama-cpp-windows"):
-        print("✅ Pre-built binaries already exist")
+        print("鉁?Pre-built binaries already exist")
         return True
     
-    print("📥 Downloading pre-built llama.cpp for Windows...")
+    print("馃摜 Downloading pre-built llama.cpp for Windows...")
     print("   This is about 50-100 MB")
     
     # URL for pre-built Windows binaries (this is an example, adjust if needed)
@@ -43,11 +43,11 @@ def download_prebuilt_binaries():
         
         urllib.request.urlretrieve(binary_url, "llama-cpp-binaries.zip")
         
-        print("📦 Extracting...")
+        print("馃摝 Extracting...")
         with zipfile.ZipFile("llama-cpp-binaries.zip", 'r') as zip_ref:
             zip_ref.extractall("llama-cpp-windows")
         
-        print("✅ Downloaded and extracted!")
+        print("鉁?Downloaded and extracted!")
         
         # Clean up zip
         os.remove("llama-cpp-binaries.zip")
@@ -55,8 +55,8 @@ def download_prebuilt_binaries():
         return True
         
     except Exception as e:
-        print(f"❌ Download failed: {e}")
-        print("\n💡 Manual download:")
+        print(f"鉂?Download failed: {e}")
+        print("\n馃挕 Manual download:")
         print("   1. Visit: https://github.com/ggerganov/llama.cpp/releases")
         print("   2. Download the Windows binary (llama-*-bin-win-*.zip)")
         print("   3. Extract to folder: llama-cpp-windows")
@@ -73,14 +73,14 @@ def convert_with_python_only():
         from transformers import AutoModelForCausalLM, AutoTokenizer
         import torch
         
-        print("\n📂 Loading model...")
+        print("\n馃搨 Loading model...")
         model = AutoModelForCausalLM.from_pretrained("llama_1b_merged_full")
         tokenizer = AutoTokenizer.from_pretrained("llama_1b_merged_full")
         
-        print("✅ Model loaded successfully!")
+        print("鉁?Model loaded successfully!")
         
         # Save in a format Ollama might accept
-        print("\n💾 Saving in compatible format...")
+        print("\n馃捑 Saving in compatible format...")
         
         output_dir = "llama_1b_for_ollama"
         os.makedirs(output_dir, exist_ok=True)
@@ -89,13 +89,13 @@ def convert_with_python_only():
         model.save_pretrained(output_dir, safe_serialization=True)
         tokenizer.save_pretrained(output_dir)
         
-        print(f"✅ Saved to: {output_dir}")
+        print(f"鉁?Saved to: {output_dir}")
         print("\nNow let's try importing this to Ollama...")
         
         return output_dir
         
     except Exception as e:
-        print(f"❌ Conversion failed: {e}")
+        print(f"鉂?Conversion failed: {e}")
         return None
 
 def create_modelfile(model_path):
@@ -118,7 +118,7 @@ SYSTEM \"\"\"You are a helpful financial literacy assistant for Malaysian youth.
     with open("Modelfile_Clean", 'w', encoding='utf-8') as f:
         f.write(modelfile_content)
     
-    print("✅ Modelfile created with UTF-8 encoding")
+    print("鉁?Modelfile created with UTF-8 encoding")
     print(f"   Model path: {model_path}")
     
     return True
@@ -127,13 +127,13 @@ def import_to_ollama(model_name="my-finetuned"):
     """Import to Ollama"""
     print_header("Step 3: Importing to Ollama")
     
-    print(f"📦 Importing as: {model_name}")
+    print(f"馃摝 Importing as: {model_name}")
     
     # Check if exists
     try:
         result = subprocess.run(['ollama', 'list'], capture_output=True, text=True)
         if model_name in result.stdout:
-            print(f"⚠️  Model '{model_name}' exists")
+            print(f"鈿狅笍  Model '{model_name}' exists")
             response = input("   Replace? (y/n): ")
             if response.lower() == 'y':
                 subprocess.run(['ollama', 'rm', model_name])
@@ -159,11 +159,11 @@ def import_to_ollama(model_name="my-finetuned"):
             env=env
         )
         print(result.stdout)
-        print(f"\n✅ Import successful!")
+        print(f"\n鉁?Import successful!")
         return True
         
     except subprocess.CalledProcessError as e:
-        print(f"❌ Import failed")
+        print(f"鉂?Import failed")
         try:
             print(f"Error: {e.stderr}")
         except:
@@ -175,32 +175,32 @@ def try_upload_to_huggingface():
     print_header("Alternative Approach")
     
     print("Since direct conversion is challenging, here are alternatives:")
-    print("\n1️⃣  Upload to HuggingFace Hub (Free, Public)")
+    print("\n1锔忊儯  Upload to HuggingFace Hub (Free, Public)")
     print("   - Create account at huggingface.co")
     print("   - Upload your model")
     print("   - Use: ollama pull hf.co/yourusername/model-name")
     
-    print("\n2️⃣  Use Google Colab for Conversion")
+    print("\n2锔忊儯  Use Google Colab for Conversion")
     print("   - Free GPU environment")
     print("   - Can build llama.cpp there")
     print("   - Download GGUF file")
     
-    print("\n3️⃣  Ask a Friend with Mac/Linux")
+    print("\n3锔忊儯  Ask a Friend with Mac/Linux")
     print("   - Conversion is easier on Unix systems")
     print("   - They can send you the GGUF file")
     
-    print("\n4️⃣  Use Online Converter Services")
+    print("\n4锔忊儯  Use Online Converter Services")
     print("   - Some services convert models online")
     print("   - Example: huggingface.co/spaces")
 
 def main():
     """Main process"""
-    print_header("🚀 Pre-built Binary Conversion Method")
+    print_header("馃殌 Pre-built Binary Conversion Method")
     
     print("This approach:")
-    print("  ✅ Uses pre-built tools (no compilation)")
-    print("  ✅ Handles encoding issues")
-    print("  ✅ Multiple fallback methods")
+    print("  鉁?Uses pre-built tools (no compilation)")
+    print("  鉁?Handles encoding issues")
+    print("  鉁?Multiple fallback methods")
     
     response = input("\nContinue? (y/n): ")
     if response.lower() != 'y':
@@ -209,7 +209,7 @@ def main():
     
     # Check if model folder exists
     if not os.path.exists("llama_1b_merged_full"):
-        print("❌ Model folder not found!")
+        print("鉂?Model folder not found!")
         return
     
     print("\n" + "="*70)
@@ -229,8 +229,8 @@ def main():
             
             # Try import
             if import_to_ollama(model_name):
-                print_header("🎉 SUCCESS!")
-                print(f"✅ Model imported: {model_name}")
+                print_header("馃帀 SUCCESS!")
+                print(f"鉁?Model imported: {model_name}")
                 print(f"\nTest it: ollama run {model_name}")
                 return
     
@@ -241,7 +241,7 @@ def main():
     
     try_upload_to_huggingface()
     
-    print("\n💡 Recommended: Try the Google Colab method")
+    print("\n馃挕 Recommended: Try the Google Colab method")
     print("   It's free and will definitely work!")
     print("\n   Would you like instructions for Google Colab conversion?")
 
@@ -249,8 +249,8 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n⚠️  Interrupted")
+        print("\n\n鈿狅笍  Interrupted")
     except Exception as e:
-        print(f"\n\n❌ Error: {e}")
+        print(f"\n\n鉂?Error: {e}")
         import traceback
         traceback.print_exc()
